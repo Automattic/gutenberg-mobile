@@ -16,9 +16,9 @@ import {
 } from './helpers/utils';
 import testData from './helpers/test-data';
 
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000000;
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 4000000;
 
-describe( 'Gutenberg Editor Image Block tests', () => {
+xdescribe( 'Gutenberg Editor Image Block tests', () => {
 	let driver;
 	let editorPage;
 	let allPassed = true;

@@ -10,6 +10,7 @@ import childProcess from 'child_process';
 import wd from 'wd';
 import crypto from 'crypto';
 import path from 'path';
+import { promisify } from 'util';
 
 /**
  * Internal dependencies
@@ -34,7 +35,10 @@ const defaultIOSAppPath = './ios/build/gutenberg/Build/Products/Release-iphonesi
 const localAndroidAppPath = process.env.ANDROID_APP_PATH || defaultAndroidAppPath;
 const localIOSAppPath = process.env.IOS_APP_PATH || defaultIOSAppPath;
 
+// eslint-disable-next-line no-unused-vars
 const localAppiumPort = serverConfigs.local.port; // Port to spawn appium process for local runs
+const wdaLocalPort = serverConfigs.local.wdaLocalPort; // Port used for the WebDriver Agent, this needs to be unique to the session to avioid errors
+
 let appiumProcess: ?childProcess.ChildProcess;
 
 // Used to map unicode and special values to keycodes on Android
@@ -54,20 +58,72 @@ const isLocalEnvironment = () => {
 	return testEnvironment.toLowerCase() === 'local';
 };
 
+const getIOSDevices = async () => {
+	const exec = promisify( childProcess.exec );
+	const { stderr, stdout } = await exec( 'instruments -s devices' );
+	if ( stderr ) {
+		// eslint-disable-next-line no-console
+		console.log( `error running instruments command ${ stderr }` );
+	}
+
+	/*
+	Turns simulator output from
+
+	[
+	'iPhone Xʀ (12.4) [0FAC088F-64FC-4555-A47C-584C1C6AB2A3] (Simulator)',
+      'iPhone Xs Max (12.4) + Apple Watch Series 4 - 44mm (5.3) [0F828AEB-92C4-4C70-BC61-09AB06DCE132] (Simulator)',
+      ...
+      ]
+
+      to
+
+      [
+      { platformVersion: '12.4',
+        udid: '0FAC088F-64FC-4555-A47C-584C1C6AB2A3' },
+      { platformVersion: '12.4',
+        udid: 'F414048A-15CB-4FFD-9CD4-0B2467E66B54' },
+      ...
+      ]
+
+	 */
+	let simulatorList = stdout.split( '\n' ).reverse();
+	// eslint-disable-next-line no-console
+	// console.log( simulatorList );
+	simulatorList = simulatorList.filter(
+		( simulatorData ) => simulatorData.includes( 'iPhone' ) && ! simulatorData.includes( 'Apple Watch' ) // Only get iPhone sims not linked to WatchOS sim
+	);
+
+	const re = /\([0-9]+\.[0-9](\.[0-9])?\) \[[0-9A-Z-]+\]/m; // Regex for simulator name to platform version with UDID
+	simulatorList = simulatorList.map( ( simulatorData ) => simulatorData.match( re )[ 0 ].replace( /[()\[\]r]/g, '' ).split( ' ' ) ); // Get Platform version and UDID for devices
+	simulatorList = simulatorList.map( ( simulatorData ) => { // Build final array
+		return {
+			platformVersion: simulatorData[ 0 ],
+			udid: simulatorData[ 1 ],
+		};
+	} );
+	// eslint-disable-next-line no-console
+	// console.log( simulatorList );
+	return simulatorList;
+};
+
 // Initialises the driver and desired capabilities for appium
 const setupDriver = async () => {
 	const branch = process.env.CIRCLE_BRANCH || '';
-	const safeBranchName = branch.replace( /\//g, '-' );
+	let mID = process.env.TEST_ID || -1;
+	mID += 1;
+	process.env.TEST_ID = mID;
+
 	if ( isLocalEnvironment() ) {
 		try {
-			appiumProcess = await AppiumLocal.start( localAppiumPort );
+			appiumProcess = await AppiumLocal.start( localAppiumPort, mID );
 		} catch ( err ) {
 			// Ignore error here, Appium is probably already running (Appium desktop has its own server for instance)
 			// eslint-disable-next-line no-console
-			console.log( 'Could not start Appium server', err.toString() );
+			console.log( 'Could not start Appium server on port ', localAppiumPort, ' - ', err.toString() );
 		}
 	}
 
+	const safeBranchName = branch.replace( /\//g, '-' );
 	const serverConfig = isLocalEnvironment() ? serverConfigs.local : serverConfigs.sauce;
 	const driver = wd.promiseChainRemote( serverConfig );
 
@@ -94,6 +150,10 @@ const setupDriver = async () => {
 	} else {
 		desiredCaps = _.clone( ios12 );
 		if ( isLocalEnvironment() ) {
+			const simulators = await getIOSDevices() || [];
+			const { platformVersion, udid } = simulators[ parseInt( process.env.JEST_WORKER_ID ) - 1 ]; // Pick a unique simulator for this run
+			desiredCaps.platformVersion = platformVersion;
+			desiredCaps.udid = udid;
 			desiredCaps.app = path.resolve( localIOSAppPath );
 		} else {
 			desiredCaps.app = `sauce-storage:Gutenberg-${ safeBranchName }.app.zip`; // App should be preloaded to sauce storage, this can also be a URL
@@ -103,8 +163,12 @@ const setupDriver = async () => {
 	if ( ! isLocalEnvironment() ) {
 		desiredCaps.name = `Gutenberg Editor Tests[${ rnPlatform }]-${ branch }`;
 		desiredCaps.tags = [ 'Gutenberg', branch ];
+	} else {
+		desiredCaps.wdaLocalPort = wdaLocalPort;
 	}
 
+	// eslint-disable-next-line no-console
+	console.log( desiredCaps );
 	await driver.init( desiredCaps );
 
 	const status = await driver.status();
@@ -277,19 +341,25 @@ const swipeUp = async ( driver: wd.PromiseChainWebdriver, element: wd.PromiseCha
 	await action.perform();
 };
 
-// Starts from the middle of the screen and swipes downwards
-const swipeDown = async ( driver: wd.PromiseChainWebdriver ) => {
-	const size = await driver.getWindowSize();
-	const y = 0;
+// Starts from the middle of the screen or the element(if specified)
+// and swipes upwards
+const swipeDown = async ( driver: wd.PromiseChainWebdriver, element: wd.PromiseChainWebdriver.Element = undefined ) => {
+	let size = await driver.getWindowSize();
+	let y = 0;
+	if ( element !== undefined ) {
+		size = await element.getSize();
+		const location = await element.getLocation();
+		y = location.y;
+	}
 
 	const startX = size.width / 2;
 	const startY = y + ( size.height / 3 );
 	const endX = startX;
-	const endY = startY - ( startY * -1 * 0.5 );
+	const endY = startY + ( startY * 0.5 );
 
 	const action = await new wd.TouchAction( driver );
 	action.press( { x: startX, y: startY } );
-	action.wait( 3000 );
+	action.wait( 2000 );
 	action.moveTo( { x: endX, y: endY } );
 	action.release();
 	await action.perform();

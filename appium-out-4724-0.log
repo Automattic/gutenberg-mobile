@@ -1,0 +1,214 @@
+2019-10-18 01:30:14:600 [Appium] Welcome to Appium v1.14.0
+2019-10-18 01:30:14:601 [Appium] Non-default server args:
+2019-10-18 01:30:14:601 [Appium]   port: 4724
+2019-10-18 01:30:14:601 [Appium]   logFile: ./appium-out-4724-0.log
+2019-10-18 01:30:14:601 [Appium]   logNoColors: true
+2019-10-18 01:30:14:602 [Appium]   relaxedSecurityEnabled: true
+2019-10-18 01:30:14:617 [Appium] Appium REST http interface listener started on 0.0.0.0:4724
+2019-10-18 01:30:16:041 [HTTP] --> POST /wd/hub/session
+2019-10-18 01:30:16:041 [HTTP] {"desiredCapabilities":{"browserName":"","platformName":"iOS","platformVersion":"12.0","deviceName":"iPhone Simulator","os":"iOS","deviceOrientation":"portrait","automationName":"XCUITest","app":"/Users/javon/Automattic-Projects/gutenberg-mobile/ios/build/gutenberg/Build/Products/Release-iphonesimulator/gutenberg.app","udid":"2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94","wdaLocalPort":8101}}
+2019-10-18 01:30:16:043 [MJSONWP] Calling AppiumDriver.createSession() with args: [{"browserName":"","platformName":"iOS","platformVersion":"12.0","deviceName":"iPhone Simulator","os":"iOS","deviceOrientation":"portrait","automationName":"XCUITest","app":"/Users/javon/Automattic-Projects/gutenberg-mobile/ios/build/gutenberg/Build/Products/Release-iphonesimulator/gutenberg.app","udid":"2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94","wdaLocalPort":8101},null,null]
+2019-10-18 01:30:16:044 [BaseDriver] Event 'newSessionRequested' logged at 1571362216044 (20:30:16 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:16:225 [Appium] Appium v1.14.0 creating new XCUITestDriver (v2.122.0) session
+2019-10-18 01:30:16:225 [Appium] Capabilities:
+2019-10-18 01:30:16:225 [Appium]   browserName: 
+2019-10-18 01:30:16:225 [Appium]   platformName: iOS
+2019-10-18 01:30:16:226 [Appium]   platformVersion: 12.0
+2019-10-18 01:30:16:226 [Appium]   deviceName: iPhone Simulator
+2019-10-18 01:30:16:226 [Appium]   os: iOS
+2019-10-18 01:30:16:226 [Appium]   deviceOrientation: portrait
+2019-10-18 01:30:16:226 [Appium]   automationName: XCUITest
+2019-10-18 01:30:16:226 [Appium]   app: /Users/javon/Automattic-Projects/gutenberg-mobile/ios/build/gutenberg/Build/Products/Release-iphonesimulator/gutenberg.app
+2019-10-18 01:30:16:226 [Appium]   udid: 2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94
+2019-10-18 01:30:16:226 [Appium]   wdaLocalPort: 8101
+2019-10-18 01:30:16:227 [Appium] Applying relaxed security to 'XCUITestDriver' as per server command line argument. All insecure features will be enabled unless explicitly disabled by --deny-insecure
+2019-10-18 01:30:16:228 [BaseDriver] Creating session with MJSONWP desired capabilities: {
+2019-10-18 01:30:16:228 [BaseDriver]   "browserName": "",
+2019-10-18 01:30:16:228 [BaseDriver]   "platformName": "iOS",
+2019-10-18 01:30:16:229 [BaseDriver]   "platformVersion": "12.0",
+2019-10-18 01:30:16:229 [BaseDriver]   "deviceName": "iPhone Simulator",
+2019-10-18 01:30:16:229 [BaseDriver]   "os": "iOS",
+2019-10-18 01:30:16:229 [BaseDriver]   "deviceOrientation": "portrait",
+2019-10-18 01:30:16:229 [BaseDriver]   "automationName": "XCUITest",
+2019-10-18 01:30:16:229 [BaseDriver]   "app": "/Users/javon/Automattic-Projects/gutenberg-mobile/ios/build/gutenberg/Build/Products/Release-iphonesimulator/gutenberg.app",
+2019-10-18 01:30:16:229 [BaseDriver]   "udid": "2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94",
+2019-10-18 01:30:16:229 [BaseDriver]   "wdaLocalPort": 8101
+2019-10-18 01:30:16:229 [BaseDriver] }
+2019-10-18 01:30:16:233 [BaseDriver] The following capabilities were provided, but are not recognized by Appium:
+2019-10-18 01:30:16:233 [BaseDriver]   os
+2019-10-18 01:30:16:233 [BaseDriver]   deviceOrientation
+2019-10-18 01:30:16:235 [BaseDriver] Session created with session id: 178aac70-5ce8-46cc-8fba-22f11c1c0c79
+2019-10-18 01:30:16:268 [XCUITest] Current user: 'javon'
+2019-10-18 01:30:16:268 [XCUITest] Changing deviceName from 'iPhone Simulator' to 'iPhone 6'
+2019-10-18 01:30:16:283 [XCUITest] Available devices: 
+2019-10-18 01:30:16:502 [iOSSim] Constructing iOS simulator for Xcode version 11.1 with udid '2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94'
+2019-10-18 01:30:16:502 [XCUITest] Determining device to run tests on: udid: '2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94', real device: false
+2019-10-18 01:30:16:505 [BaseDriver] Event 'xcodeDetailsRetrieved' logged at 1571362216505 (20:30:16 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:16:507 [BaseDriver] Using local app '/Users/javon/Automattic-Projects/gutenberg-mobile/ios/build/gutenberg/Build/Products/Release-iphonesimulator/gutenberg.app'
+2019-10-18 01:30:16:508 [BaseDriver] Event 'appConfigured' logged at 1571362216508 (20:30:16 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:16:508 [XCUITest] Checking whether app '/Users/javon/Automattic-Projects/gutenberg-mobile/ios/build/gutenberg/Build/Products/Release-iphonesimulator/gutenberg.app' is actually present on file system
+2019-10-18 01:30:16:508 [XCUITest] App is present
+2019-10-18 01:30:16:509 [iOS] Getting bundle ID from app '/Users/javon/Automattic-Projects/gutenberg-mobile/ios/build/gutenberg/Build/Products/Release-iphonesimulator/gutenberg.app': 'org.reactjs.native.example.gutenberg'
+2019-10-18 01:30:16:510 [BaseDriver] Event 'resetStarted' logged at 1571362216510 (20:30:16 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:16:687 [XCUITest] Not scrubbing third party app in anticipation of uninstall
+2019-10-18 01:30:16:688 [BaseDriver] Event 'resetComplete' logged at 1571362216688 (20:30:16 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:16:796 [IOSSimulatorLog] Starting log capture for iOS Simulator with udid '2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94', using 'xcrun simctl spawn 2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94 log stream --style compact'
+2019-10-18 01:30:16:978 [BaseDriver] Event 'logCaptureStarted' logged at 1571362216977 (20:30:16 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:16:978 [XCUITest] Setting up simulator
+2019-10-18 01:30:16:978 [iOS] No reason to set locale
+2019-10-18 01:30:16:978 [iOS] No iOS / app preferences to set
+2019-10-18 01:30:16:979 [iOS] Setting did not need to be updated
+2019-10-18 01:30:16:979 [iOSSim] Setting preferences of 2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94 Simulator to {"ConnectHardwareKeyboard":false}
+2019-10-18 01:30:16:979 [iOSSim] Setting common Simulator preferences to {"RotateWindowWhenSignaledByGuest":true,"ConnectHardwareKeyboard":false}
+2019-10-18 01:30:17:010 [iOSSim] Updated 2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94 Simulator preferences at '/Users/javon/Library/Preferences/com.apple.iphonesimulator.plist' with {"DevicePreferences":{"2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94":{"ConnectHardwareKeyboard":false}},"RotateWindowWhenSignaledByGuest":true,"ConnectHardwareKeyboard":false}
+2019-10-18 01:30:17:122 [iOSSim] Got Simulator UI client PID: 800
+2019-10-18 01:30:17:123 [iOSSim] Both Simulator with UDID 2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94 and the UI client are currently running
+2019-10-18 01:30:17:124 [IDB] Connecting idb service to '2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94'
+2019-10-18 01:30:17:126 [XCUITest] idb will not be used for Simulator interaction. Original error: 'idb' has not been found in PATH. Is it installed? Read https://www.fbidb.io for more details
+2019-10-18 01:30:17:126 [BaseDriver] Event 'simStarted' logged at 1571362217126 (20:30:17 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:17:127 [XCUITest] Verifying application platform
+2019-10-18 01:30:17:127 [XCUITest] CFBundleSupportedPlatforms: ["iPhoneSimulator"]
+2019-10-18 01:30:17:229 [XCUITest] Reset requested. Removing app with id 'org.reactjs.native.example.gutenberg' from the device
+2019-10-18 01:30:18:341 [XCUITest] Cleaning installd cache to save the disk space
+2019-10-18 01:30:18:344 [XCUITest] Installing '/Users/javon/Automattic-Projects/gutenberg-mobile/ios/build/gutenberg/Build/Products/Release-iphonesimulator/gutenberg.app' on Simulator with UUID '2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94'...
+2019-10-18 01:30:19:563 [simctl] Error: simctl error running 'install': An error was encountered processing the command (domain=IXUserPresentableErrorDomain, code=1):
+2019-10-18 01:30:19:564 [simctl] This app could not be installed at this time.
+2019-10-18 01:30:19:564 [simctl] Failed to load Info.plist from bundle at path /Users/javon/Library/Developer/CoreSimulator/Devices/2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94/data/Library/Caches/com.apple.mobile.installd.staging/temp.N0LKjP/extracted/Payload/gutenberg.app
+2019-10-18 01:30:19:564 [simctl] Failed to load Info.plist from bundle at path /Users/javon/Library/Developer/CoreSimulator/Devices/2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94/data/Library/Caches/com.apple.mobile.installd.staging/temp.N0LKjP/extracted/Payload/gutenberg.app
+2019-10-18 01:30:19:564 [simctl] Underlying error (domain=MIInstallerErrorDomain, code=35):
+2019-10-18 01:30:19:564 [simctl] 	Failed to load Info.plist from bundle at path /Users/javon/Library/Developer/CoreSimulator/Devices/2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94/data/Library/Caches/com.apple.mobile.installd.staging/temp.N0LKjP/extracted/Payload/gutenberg.app
+2019-10-18 01:30:19:564 [simctl]     at Object.wrappedLogger.errorAndThrow (/Users/javon/Automattic-Projects/gutenberg-mobile/node_modules/appium-support/lib/logging.js:78:13)
+2019-10-18 01:30:19:564 [simctl]     at errorAndThrow (/Users/javon/Automattic-Projects/gutenberg-mobile/node_modules/node-simctl/lib/simctl.js:56:11)
+2019-10-18 01:30:19:564 [XCUITest] Got an error on '/Users/javon/Automattic-Projects/gutenberg-mobile/ios/build/gutenberg/Build/Products/Release-iphonesimulator/gutenberg.app' install: simctl error running 'install': An error was encountered processing the command (domain=IXUserPresentableErrorDomain, code=1):
+2019-10-18 01:30:19:565 [XCUITest] This app could not be installed at this time.
+2019-10-18 01:30:19:565 [XCUITest] Failed to load Info.plist from bundle at path /Users/javon/Library/Developer/CoreSimulator/Devices/2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94/data/Library/Caches/com.apple.mobile.installd.staging/temp.N0LKjP/extracted/Payload/gutenberg.app
+2019-10-18 01:30:19:565 [XCUITest] Failed to load Info.plist from bundle at path /Users/javon/Library/Developer/CoreSimulator/Devices/2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94/data/Library/Caches/com.apple.mobile.installd.staging/temp.N0LKjP/extracted/Payload/gutenberg.app
+2019-10-18 01:30:19:565 [XCUITest] Underlying error (domain=MIInstallerErrorDomain, code=35):
+2019-10-18 01:30:19:565 [XCUITest] 	Failed to load Info.plist from bundle at path /Users/javon/Library/Developer/CoreSimulator/Devices/2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94/data/Library/Caches/com.apple.mobile.installd.staging/temp.N0LKjP/extracted/Payload/gutenberg.app
+2019-10-18 01:30:19:565 [XCUITest] installd requires the cache to be available in order to install '/Users/javon/Automattic-Projects/gutenberg-mobile/ios/build/gutenberg/Build/Products/Release-iphonesimulator/gutenberg.app'. Restoring the cache
+2019-10-18 01:30:19:567 [XCUITest] Retrying application install
+2019-10-18 01:30:20:783 [XCUITest] The app has been installed successfully.
+2019-10-18 01:30:20:784 [BaseDriver] Event 'appInstalled' logged at 1571362220784 (20:30:20 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:20:785 [XCUITest] Using WDA path: '/Users/javon/Automattic-Projects/gutenberg-mobile/node_modules/appium-webdriveragent'
+2019-10-18 01:30:20:785 [XCUITest] Using WDA agent: '/Users/javon/Automattic-Projects/gutenberg-mobile/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+2019-10-18 01:30:20:869 [XCUITest] No obsolete cached processes from previous WDA sessions listening on port 8101 have been found
+2019-10-18 01:30:20:869 [XCUITest] Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+2019-10-18 01:30:20:871 [WD Proxy] Matched '/status' to command name 'getStatus'
+2019-10-18 01:30:20:872 [WD Proxy] Proxying [GET /status] to [GET http://localhost:8101/status] with no body
+2019-10-18 01:30:20:882 [WD Proxy] Got response with status 200: {
+2019-10-18 01:30:20:883 [WD Proxy]   "value" : {
+2019-10-18 01:30:20:883 [WD Proxy]     "state" : "success",
+2019-10-18 01:30:20:883 [WD Proxy]     "os" : {
+2019-10-18 01:30:20:883 [WD Proxy]       "name" : "iOS",
+2019-10-18 01:30:20:883 [WD Proxy]       "version" : "12.0",
+2019-10-18 01:30:20:883 [WD Proxy]       "sdkVersion" : "13.0"
+2019-10-18 01:30:20:883 [WD Proxy]     },
+2019-10-18 01:30:20:883 [WD Proxy]     "ios" : {
+2019-10-18 01:30:20:883 [WD Proxy]       "simulatorVersion" : "12.0",
+2019-10-18 01:30:20:884 [WD Proxy]       "ip" : "192.168.100.202"
+2019-10-18 01:30:20:884 [WD Proxy]     },
+2019-10-18 01:30:20:884 [WD Proxy]     "build" : {
+2019-10-18 01:30:20:884 [WD Proxy]       "upgradedAt" : "1571359631589",
+2019-10-18 01:30:20:884 [WD Proxy]       "time" : "Oct 17 2019 19:47:20",
+2019-10-18 01:30:20:884 [WD Proxy]       "productBundleIdentifier" : "com.facebook.WebDriverAgentRunner"
+2019-10-18 01:30:20:884 [WD Proxy]     }
+2019-10-18 01:30:20:884 [WD Proxy]   },
+2019-10-18 01:30:20:884 [WD Proxy]   "sessionId" : "A254FF95-D46D-4358-9DA5-4D22B423762A",
+2019-10-18 01:30:20:884 [WD Proxy]   "status" : 0
+2019-10-18 01:30:20:885 [WD Proxy] }
+2019-10-18 01:30:20:885 [WD Proxy] Determined the downstream protocol for the proxy as 'MJSONWP'
+2019-10-18 01:30:20:886 [XCUITest] Upgrade timestamp of the currently bundled WDA: 1571359631589
+2019-10-18 01:30:20:886 [XCUITest] Upgrade timestamp of the WDA on the device: 1571359631589
+2019-10-18 01:30:20:886 [XCUITest] Will reuse previously cached WDA instance at 'http://localhost:8101/' with 'com.facebook.WebDriverAgentRunner'. Set the wdaLocalPort capability to a value different from 8101 if this is an undesired behavior.
+2019-10-18 01:30:20:886 [XCUITest] Trying to start WebDriverAgent 2 times with 10000ms interval
+2019-10-18 01:30:20:886 [XCUITest] These values can be customized by changing wdaStartupRetries/wdaStartupRetryInterval capabilities
+2019-10-18 01:30:20:887 [BaseDriver] Event 'wdaStartAttempted' logged at 1571362220887 (20:30:20 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:20:887 [XCUITest] Using provided WebdriverAgent at 'http://localhost:8101/'
+2019-10-18 01:30:20:888 [WD Proxy] Matched '/status' to command name 'getStatus'
+2019-10-18 01:30:20:889 [WD Proxy] Proxying [GET /status] to [GET http://localhost:8101/status] with no body
+2019-10-18 01:30:20:892 [WD Proxy] Got response with status 200: {
+2019-10-18 01:30:20:892 [WD Proxy]   "value" : {
+2019-10-18 01:30:20:892 [WD Proxy]     "state" : "success",
+2019-10-18 01:30:20:892 [WD Proxy]     "os" : {
+2019-10-18 01:30:20:892 [WD Proxy]       "name" : "iOS",
+2019-10-18 01:30:20:892 [WD Proxy]       "version" : "12.0",
+2019-10-18 01:30:20:892 [WD Proxy]       "sdkVersion" : "13.0"
+2019-10-18 01:30:20:893 [WD Proxy]     },
+2019-10-18 01:30:20:893 [WD Proxy]     "ios" : {
+2019-10-18 01:30:20:893 [WD Proxy]       "simulatorVersion" : "12.0",
+2019-10-18 01:30:20:893 [WD Proxy]       "ip" : "192.168.100.202"
+2019-10-18 01:30:20:893 [WD Proxy]     },
+2019-10-18 01:30:20:893 [WD Proxy]     "build" : {
+2019-10-18 01:30:20:893 [WD Proxy]       "upgradedAt" : "1571359631589",
+2019-10-18 01:30:20:893 [WD Proxy]       "time" : "Oct 17 2019 19:47:20",
+2019-10-18 01:30:20:893 [WD Proxy]       "productBundleIdentifier" : "com.facebook.WebDriverAgentRunner"
+2019-10-18 01:30:20:893 [WD Proxy]     }
+2019-10-18 01:30:20:893 [WD Proxy]   },
+2019-10-18 01:30:20:893 [WD Proxy]   "sessionId" : "A254FF95-D46D-4358-9DA5-4D22B423762A",
+2019-10-18 01:30:20:894 [WD Proxy]   "status" : 0
+2019-10-18 01:30:20:894 [WD Proxy] }
+2019-10-18 01:30:20:894 [WD Proxy] Determined the downstream protocol for the proxy as 'MJSONWP'
+2019-10-18 01:30:20:894 [BaseDriver] Event 'wdaSessionAttempted' logged at 1571362220894 (20:30:20 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:20:894 [XCUITest] Sending createSession command to WDA
+2019-10-18 01:30:20:895 [WD Proxy] Matched '/session' to command name 'createSession'
+2019-10-18 01:30:20:896 [WD Proxy] Proxying [POST /session] to [POST http://localhost:8101/session] with body: {"desiredCapabilities":{"bundleId":"org.reactjs.native.example.gutenberg","arguments":[],"environment":{},"eventloopIdleDelaySec":0,"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+2019-10-18 01:30:22:641 [WD Proxy] Got response with status 200: {"value":{"sessionId":"5BBCC6CB-911E-4BAF-BD75-BC77972F043D","capabilities":{"device":"iphone","browserName":"Gutenberg","sdkVersion":"12.0","CFBundleIdentifier":"org.reactjs.native.example.gutenberg"}},"sessionId":"5BBCC6CB-911E-4BAF-BD75-BC77972F043D","status":0}
+2019-10-18 01:30:22:641 [WD Proxy] Determined the downstream protocol for the proxy as 'MJSONWP'
+2019-10-18 01:30:22:641 [BaseDriver] Event 'wdaSessionStarted' logged at 1571362222641 (20:30:22 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:22:642 [BaseDriver] Event 'wdaStarted' logged at 1571362222641 (20:30:22 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:22:642 [XCUITest] Skipping setting of the initial display orientation. Set the "orientation" capability to either "LANDSCAPE" or "PORTRAIT", if this is an undesired behavior.
+2019-10-18 01:30:22:642 [BaseDriver] Event 'orientationSet' logged at 1571362222642 (20:30:22 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:22:643 [Appium] New XCUITestDriver session created successfully, session 178aac70-5ce8-46cc-8fba-22f11c1c0c79 added to master session list
+2019-10-18 01:30:22:643 [BaseDriver] Event 'newSessionStarted' logged at 1571362222643 (20:30:22 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:22:644 [MJSONWP (178aac70)] Cached the protocol value 'MJSONWP' for the new session 178aac70-5ce8-46cc-8fba-22f11c1c0c79
+2019-10-18 01:30:22:645 [MJSONWP (178aac70)] Responding to client with driver.createSession() result: {"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"iOS","platformVersion":"12.0","deviceName":"iPhone Simulator","os":"iOS","deviceOrientation":"portrait","automationName":"XCUITest","app":"/Users/javon/Automattic-Projects/gutenberg-mobile/ios/build/gutenberg/Build/Products/Release-iphonesimulator/gutenberg.app","udid":"2C3DA63C-8A0E-4DA8-A8EC-1F1DF643EF94","wdaLocalPort":8101}
+2019-10-18 01:30:22:648 [HTTP] <-- POST /wd/hub/session 200 6605 ms - 614
+2019-10-18 01:30:22:648 [HTTP] 
+2019-10-18 01:30:22:660 [HTTP] --> GET /wd/hub/status
+2019-10-18 01:30:22:660 [HTTP] {}
+2019-10-18 01:30:22:661 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2019-10-18 01:30:22:661 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.14.0"}}
+2019-10-18 01:30:22:662 [HTTP] <-- GET /wd/hub/status 200 2 ms - 68
+2019-10-18 01:30:22:662 [HTTP] 
+2019-10-18 01:30:22:678 [HTTP] --> POST /wd/hub/session/178aac70-5ce8-46cc-8fba-22f11c1c0c79/timeouts/implicit_wait
+2019-10-18 01:30:22:678 [HTTP] {"ms":2000}
+2019-10-18 01:30:22:680 [MJSONWP (178aac70)] Calling AppiumDriver.implicitWait() with args: [2000,"178aac70-5ce8-46cc-8fba-22f11c1c0c79"]
+2019-10-18 01:30:22:680 [XCUITest] Executing command 'implicitWait'
+2019-10-18 01:30:22:701 [BaseDriver] Set implicit wait to 2000ms
+2019-10-18 01:30:22:702 [MJSONWP (178aac70)] Responding to client with driver.implicitWait() result: null
+2019-10-18 01:30:22:703 [HTTP] <-- POST /wd/hub/session/178aac70-5ce8-46cc-8fba-22f11c1c0c79/timeouts/implicit_wait 200 24 ms - 76
+2019-10-18 01:30:22:703 [HTTP] 
+2019-10-18 01:30:25:715 [HTTP] --> POST /wd/hub/session/178aac70-5ce8-46cc-8fba-22f11c1c0c79/orientation
+2019-10-18 01:30:25:716 [HTTP] {"orientation":"PORTRAIT"}
+2019-10-18 01:30:25:718 [MJSONWP (178aac70)] Driver proxy active, passing request on via HTTP proxy
+2019-10-18 01:30:25:718 [XCUITest] Executing command 'proxyReqRes'
+2019-10-18 01:30:25:722 [WD Proxy] Matched '/wd/hub/session/178aac70-5ce8-46cc-8fba-22f11c1c0c79/orientation' to command name 'setOrientation'
+2019-10-18 01:30:25:723 [WD Proxy] Proxying [POST /wd/hub/session/178aac70-5ce8-46cc-8fba-22f11c1c0c79/orientation] to [POST http://localhost:8101/session/5BBCC6CB-911E-4BAF-BD75-BC77972F043D/orientation] with body: {"orientation":"PORTRAIT"}
+2019-10-18 01:30:27:389 [WD Proxy] Got response with status 200: {"value":{},"sessionId":"5BBCC6CB-911E-4BAF-BD75-BC77972F043D","status":0}
+2019-10-18 01:30:27:389 [WD Proxy] Replacing sessionId 5BBCC6CB-911E-4BAF-BD75-BC77972F043D with 178aac70-5ce8-46cc-8fba-22f11c1c0c79
+2019-10-18 01:30:27:390 [HTTP] <-- POST /wd/hub/session/178aac70-5ce8-46cc-8fba-22f11c1c0c79/orientation 200 1674 ms - 74
+2019-10-18 01:30:27:390 [HTTP] 
+2019-10-18 01:30:27:400 [HTTP] --> DELETE /wd/hub/session/178aac70-5ce8-46cc-8fba-22f11c1c0c79
+2019-10-18 01:30:27:400 [HTTP] {}
+2019-10-18 01:30:27:400 [MJSONWP (178aac70)] Calling AppiumDriver.deleteSession() with args: ["178aac70-5ce8-46cc-8fba-22f11c1c0c79"]
+2019-10-18 01:30:27:401 [BaseDriver] Event 'quitSessionRequested' logged at 1571362227401 (20:30:27 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:27:401 [Appium] Removing session 178aac70-5ce8-46cc-8fba-22f11c1c0c79 from our master session list
+2019-10-18 01:30:27:402 [WD Proxy] Matched '/session/178aac70-5ce8-46cc-8fba-22f11c1c0c79' to command name 'deleteSession'
+2019-10-18 01:30:27:402 [WD Proxy] Proxying [DELETE /session/178aac70-5ce8-46cc-8fba-22f11c1c0c79] to [DELETE http://localhost:8101/session/5BBCC6CB-911E-4BAF-BD75-BC77972F043D] with no body
+2019-10-18 01:30:28:443 [WD Proxy] Got response with status 200: {
+2019-10-18 01:30:28:443 [WD Proxy]   "value" : {
+2019-10-18 01:30:28:443 [WD Proxy] 
+2019-10-18 01:30:28:443 [WD Proxy]   },
+2019-10-18 01:30:28:444 [WD Proxy]   "sessionId" : "28E52E6E-312D-4E1C-A649-FE03FECD3548",
+2019-10-18 01:30:28:444 [WD Proxy]   "status" : 0
+2019-10-18 01:30:28:444 [WD Proxy] }
+2019-10-18 01:30:29:800 [XCUITest] Parsed BUILD_DIR configuration value: '/Users/javon/Library/Developer/Xcode/DerivedData/WebDriverAgent-bgqsmdooqqyyzqbqnyqdvtzsmpvo/Build/Products'
+2019-10-18 01:30:29:800 [XCUITest] Got derived data root: '/Users/javon/Library/Developer/Xcode/DerivedData/WebDriverAgent-bgqsmdooqqyyzqbqnyqdvtzsmpvo'
+2019-10-18 01:30:29:801 [XCUITest] Not clearing log files. Use `clearSystemFiles` capability to turn on.
+2019-10-18 01:30:29:801 [IOSSimulatorLog] Stopping iOS log capture
+2019-10-18 01:30:29:807 [BaseDriver] Event 'quitSessionFinished' logged at 1571362229807 (20:30:29 GMT-0500 (Eastern Standard Time))
+2019-10-18 01:30:29:807 [MJSONWP (178aac70)] Received response: null
+2019-10-18 01:30:29:807 [MJSONWP (178aac70)] But deleting session, so not returning
+2019-10-18 01:30:29:808 [MJSONWP (178aac70)] Responding to client with driver.deleteSession() result: null
+2019-10-18 01:30:29:808 [HTTP] <-- DELETE /wd/hub/session/178aac70-5ce8-46cc-8fba-22f11c1c0c79 200 2408 ms - 76
+2019-10-18 01:30:29:808 [HTTP] 

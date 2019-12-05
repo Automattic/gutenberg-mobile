@@ -9,13 +9,14 @@
 import childProcess from 'child_process';
 
 // Spawns an appium process
-export const start = ( localAppiumPort: number ) => new Promise < childProcess.ChildProcess > ( ( resolve, reject ) => {
-	const appium = childProcess.spawn( 'appium', [
+export const start = ( localAppiumPort: number, testID: number ) => new Promise < childProcess.ChildProcess > ( ( resolve, reject ) => {
+	const params = [
 		'--port', localAppiumPort.toString(),
-		'--log', './appium-out.log',
+		'--log', `./appium-out-${ localAppiumPort }-${ testID }.log`,
 		'--log-no-colors',
-		'--relaxed-security', // Needed for mobile:shell commend for text entry on Android
-	] );
+		'--relaxed-security', // Needed for mobile:shell command for text entry on Android
+	];
+	const appium = childProcess.spawn( 'appium', params );
 
 	let appiumOutputBuffer = '';
 	let resolved = false;
@@ -40,7 +41,7 @@ export const stop = async ( appium: ?childProcess.ChildProcess ) => {
 	if ( ! appium ) {
 		return;
 	}
-	await appium.kill( 'SIGINT' );
+	await appium.kill( 'SIGKILL' );
 };
 
 export default {

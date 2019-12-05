@@ -15,9 +15,9 @@ import {
 } from './helpers/utils';
 import testData from './helpers/test-data';
 
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000000;
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 4000000;
 
-describe( 'Gutenberg Editor tests for Block insertion', () => {
+xdescribe( 'Gutenberg Editor tests for Block insertion', () => {
 	let driver;
 	let editorPage;
 	let allPassed = true;
@@ -100,7 +100,7 @@ describe( 'Gutenberg Editor tests for Block insertion', () => {
 			await editorPage.dismissKeyboard();
 		}
 
-		const titleElement = await editorPage.getTitleElement( { autoscroll: true } );
+		const titleElement = await editorPage.getTitleElement();
 		await titleElement.click();
 		await titleElement.click();
 

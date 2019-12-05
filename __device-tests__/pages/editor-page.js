@@ -94,13 +94,10 @@ export default class EditorPage {
 		return undefined !== await this.getBlockAtPosition( position, blockName );
 	}
 
-	async getTitleElement( options: { autoscroll: boolean } = { autoscroll: false } ) {
+	async getTitleElement() {
 		//TODO: Improve the identifier for this element
 		const elements = await this.driver.elementsByXPath( `//*[contains(@${ this.accessibilityIdXPathAttrib }, "Post title.")]` );
-		if ( elements.length === 0 && options.autoscroll ) {
-			await swipeDown( this.driver );
-			return this.getTitleElement( options );
-		}
+		await swipeDown( this.driver );
 		return elements[ elements.length - 1 ];
 	}
 

@@ -101,7 +101,7 @@ buck-out/
 *.pot
 
 # e2e output log
-appium-out.log
+appium-out*.log
 
 bin/wp-cli.phar
 

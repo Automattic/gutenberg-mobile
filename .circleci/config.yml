@@ -101,7 +101,7 @@ jobs:
         name: Set Environment Variables
         command: |
           echo 'export TEST_RN_PLATFORM=ios' >> $BASH_ENV
-          echo 'export TEST_ENV=sauce' >> $BASH_ENV
+          echo 'export TEST_ENV=local' >> $BASH_ENV
     - run:
         name: Prepare build cache key
         command: find yarn.lock ios react-native-aztec/ios react-native-gutenberg-bridge/ios -type f -print0 | sort -z | xargs -0 shasum | tee ios-checksums.txt
@@ -136,10 +136,8 @@ jobs:
         name: Generate .app file for testing
         command: WORK_DIR=$(pwd) && cd ./ios/build/gutenberg/Build/Products/Release-iphonesimulator && zip -r $WORK_DIR/ios/Gutenberg.app.zip gutenberg.app
     - run:
-        name: Upload .app to sauce labs
-        command: |
-          source bin/sauce-pre-upload.sh
-          curl -u "$SAUCE_USERNAME:$SAUCE_ACCESS_KEY" -X POST -H "Content-Type: application/octet-stream" https://saucelabs.com/rest/v1/storage/automattic/Gutenberg-$SAUCE_FILENAME.app.zip?overwrite=true --data-binary @./ios/Gutenberg.app.zip
+        name: Install Appium globally
+        command: npm install -g appium
     - run:
         name: Run Device Tests
         command: |
