@@ -8,30 +8,62 @@
     <string name="gutenberg_native_555_555_1234" tools:ignore="UnusedResources">(555)555–1234</string>
     <!-- translators: sample content for "Portfolio" page template -->
     <string name="gutenberg_native_a_description_of_the_project_and_the_works_presented" tools:ignore="UnusedResources">A description of the project and the works presented.</string>
+    <string name="gutenberg_native_a_form_enabling_readers_to_get_notifications_when_new_posts_are_p" tools:ignore="UnusedResources">A form enabling readers to get notifications when new posts are published from this site.</string>
+    <string name="gutenberg_native_a_form_enabling_readers_to_join_a_mailchimp_list" tools:ignore="UnusedResources">A form enabling readers to join a Mailchimp list.</string>
     <!-- translators: sample content for "Contact" page template -->
     <string name="gutenberg_native_a_href_mailto_mail_example_com_mail_example_com_a" tools:ignore="UnusedResources">&lt;a href=\"mailto:mail@example.com\"&gt;mail@example.com&lt;/a&gt;</string>
     <!-- translators: sample content for "Team" page template -->
     <string name="gutenberg_native_a_short_bio_with_personal_history_key_achievements_or_an_interest" tools:ignore="UnusedResources">A short bio with personal history, key achievements, or an interesting fact.</string>
     <!-- translators: sample content for "Services" page template -->
     <string name="gutenberg_native_a_short_description_of_the_services_you_offer" tools:ignore="UnusedResources">A short description of the services you offer.</string>
+    <string name="gutenberg_native_a_simple_way_to_get_feedback_from_folks_visiting_your_site" tools:ignore="UnusedResources">A simple way to get feedback from folks visiting your site.</string>
+    <string name="gutenberg_native_accept" tools:ignore="UnusedResources">Accept</string>
+    <string name="gutenberg_native_account" tools:ignore="UnusedResources">Account</string>
+    <string name="gutenberg_native_account_settings" tools:ignore="UnusedResources">Account Settings</string>
+    <string name="gutenberg_native_ad" tools:ignore="UnusedResources">Ad</string>
     <string name="gutenberg_native_add_a_description" tools:ignore="UnusedResources">Add a description</string>
+    <string name="gutenberg_native_add_a_location" tools:ignore="UnusedResources">Add a location</string>
+    <string name="gutenberg_native_add_a_phone_number_input" tools:ignore="UnusedResources">Add a phone number input.</string>
     <string name="gutenberg_native_add_a_shortcode" tools:ignore="UnusedResources">Add a shortcode…</string>
+    <string name="gutenberg_native_add_a_single_checkbox" tools:ignore="UnusedResources">Add a single checkbox.</string>
+    <string name="gutenberg_native_add_a_subscription_form_for_your_revue_newsletter" tools:ignore="UnusedResources">Add a subscription form for your Revue newsletter.</string>
+    <string name="gutenberg_native_add_an_address_input_for_a_website" tools:ignore="UnusedResources">Add an address input for a website.</string>
+    <string name="gutenberg_native_add_an_interactive_map_showing_one_or_more_locations" tools:ignore="UnusedResources">Add an interactive map showing one or more locations.</string>
+    <string name="gutenberg_native_add_an_interactive_slideshow" tools:ignore="UnusedResources">Add an interactive slideshow.</string>
     <string name="gutenberg_native_add_annotation" tools:ignore="UnusedResources">Add annotation</string>
     <string name="gutenberg_native_add_block_after" tools:ignore="UnusedResources">Add Block After</string>
     <string name="gutenberg_native_add_block_before" tools:ignore="UnusedResources">Add Block Before</string>
     <string name="gutenberg_native_add_block_here" tools:ignore="UnusedResources">ADD BLOCK HERE</string>
+    <string name="gutenberg_native_add_form" tools:ignore="UnusedResources">Add form</string>
+    <string name="gutenberg_native_add_form_d09e56a7" tools:ignore="UnusedResources">Add Form</string>
     <string name="gutenberg_native_add_image" tools:ignore="UnusedResources">ADD IMAGE</string>
     <string name="gutenberg_native_add_image_or_video" tools:ignore="UnusedResources">ADD IMAGE OR VIDEO</string>
     <string name="gutenberg_native_add_link_text" tools:ignore="UnusedResources">Add link text</string>
+    <string name="gutenberg_native_add_marker" tools:ignore="UnusedResources">Add marker</string>
+    <string name="gutenberg_native_add_option" tools:ignore="UnusedResources">Add option</string>
     <string name="gutenberg_native_add_paragraph_block" tools:ignore="UnusedResources">Add paragraph block</string>
     <string name="gutenberg_native_add_to_beginning" tools:ignore="UnusedResources">Add To Beginning</string>
     <string name="gutenberg_native_add_to_end" tools:ignore="UnusedResources">Add To End</string>
     <string name="gutenberg_native_add_url" tools:ignore="UnusedResources">Add URL</string>
     <string name="gutenberg_native_add_video" tools:ignore="UnusedResources">ADD VIDEO</string>
+    <string name="gutenberg_native_address" tools:ignore="UnusedResources">Address</string>
+    <string name="gutenberg_native_address_line_2" tools:ignore="UnusedResources">Address Line 2</string>
+    <string name="gutenberg_native_address_line_3" tools:ignore="UnusedResources">Address Line 3</string>
+    <string name="gutenberg_native_affiliate" tools:ignore="UnusedResources">affiliate</string>
+    <string name="gutenberg_native_allow_visitors_to_book_a_reservation_with_opentable" tools:ignore="UnusedResources">Allow visitors to book a reservation with OpenTable</string>
     <string name="gutenberg_native_alt_text" tools:ignore="UnusedResources">Alt Text</string>
+    <string name="gutenberg_native_amazon" tools:ignore="UnusedResources">Amazon</string>
+    <string name="gutenberg_native_amazon_1e17fd88" tools:ignore="UnusedResources">amazon</string>
     <string name="gutenberg_native_an_unknown_error_occurred_please_try_again" tools:ignore="UnusedResources">An unknown error occurred. Please try again.</string>
     <string name="gutenberg_native_angle" tools:ignore="UnusedResources">Angle</string>
     <string name="gutenberg_native_annotations_sidebar" tools:ignore="UnusedResources">Annotations Sidebar</string>
+    <string name="gutenberg_native_are_you_sure_you_wish_to_leave_this_page" tools:ignore="UnusedResources">Are you sure you wish to leave this page?</string>
+    <string name="gutenberg_native_august_3_2018" tools:ignore="UnusedResources">August 3, 2018</string>
+    <string name="gutenberg_native_autoplay_between_slides" tools:ignore="UnusedResources">Autoplay between slides</string>
+    <string name="gutenberg_native_background" tools:ignore="UnusedResources">Background</string>
+    <string name="gutenberg_native_basic" tools:ignore="UnusedResources">Basic</string>
+    <string name="gutenberg_native_beta" tools:ignore="UnusedResources">beta</string>
+    <string name="gutenberg_native_black_and_white" tools:ignore="UnusedResources">Black and white</string>
     <!-- translators: displayed right after the block is copied. -->
     <string name="gutenberg_native_block_copied" tools:ignore="UnusedResources">Block copied</string>
     <!-- translators: displayed right after the block is cut. -->
@@ -45,21 +77,66 @@
     <string name="gutenberg_native_block_settings" tools:ignore="UnusedResources">Block settings</string>
     <!-- translators: title for "Blog" page template -->
     <string name="gutenberg_native_blog" tools:ignore="UnusedResources">Blog</string>
+    <string name="gutenberg_native_border_radius" tools:ignore="UnusedResources">Border Radius</string>
+    <string name="gutenberg_native_border_settings" tools:ignore="UnusedResources">Border Settings</string>
+    <string name="gutenberg_native_business_hours" tools:ignore="UnusedResources">Business Hours</string>
+    <string name="gutenberg_native_button_210_x_113_pixels" tools:ignore="UnusedResources">Button (210 x 113 pixels)</string>
+    <string name="gutenberg_native_button_allowing_you_to_sell_subscription_products" tools:ignore="UnusedResources">Button allowing you to sell subscription products.</string>
+    <string name="gutenberg_native_button_background_text_color" tools:ignore="UnusedResources">Button Background &amp; Text Color</string>
+    <string name="gutenberg_native_button_border_settings" tools:ignore="UnusedResources">Button Border Settings</string>
+    <string name="gutenberg_native_button_color_settings" tools:ignore="UnusedResources">Button Color Settings</string>
+    <string name="gutenberg_native_button_link_color" tools:ignore="UnusedResources">Button &amp; Link Color</string>
+    <string name="gutenberg_native_by_clicking_submit_you_agree_to_share_your_email_address_with_the" tools:ignore="UnusedResources">By clicking submit, you agree to share your email address with the site owner and Mailchimp to receive marketing, updates, and other emails from the site owner. Use the unsubscribe link in those emails to opt out at any time.</string>
+    <string name="gutenberg_native_calendar_settings" tools:ignore="UnusedResources">Calendar Settings</string>
+    <string name="gutenberg_native_calendly" tools:ignore="UnusedResources">Calendly</string>
+    <string name="gutenberg_native_calendly_web_address_or_embed_code" tools:ignore="UnusedResources">Calendly web address or embed code…</string>
+    <string name="gutenberg_native_cellular_phone" tools:ignore="UnusedResources">Cellular phone</string>
+    <string name="gutenberg_native_checkbox" tools:ignore="UnusedResources">Checkbox</string>
+    <string name="gutenberg_native_checkbox_group" tools:ignore="UnusedResources">Checkbox Group</string>
+    <string name="gutenberg_native_choose" tools:ignore="UnusedResources">Choose</string>
     <string name="gutenberg_native_choose_from_device" tools:ignore="UnusedResources">Choose from device</string>
     <string name="gutenberg_native_choose_image" tools:ignore="UnusedResources">Choose image</string>
     <string name="gutenberg_native_choose_image_or_video" tools:ignore="UnusedResources">Choose image or video</string>
+    <string name="gutenberg_native_choose_multiple" tools:ignore="UnusedResources">Choose Multiple</string>
     <string name="gutenberg_native_choose_video" tools:ignore="UnusedResources">Choose video</string>
+    <string name="gutenberg_native_city" tools:ignore="UnusedResources">City</string>
     <!-- translators: sample content for "Contact" page template -->
     <string name="gutenberg_native_city_10100" tools:ignore="UnusedResources">City, 10100</string>
+    <string name="gutenberg_native_closed" tools:ignore="UnusedResources">Closed</string>
+    <string name="gutenberg_native_compact_but_powerful_add_a_select_box_with_several_items" tools:ignore="UnusedResources">Compact, but powerful. Add a select box with several items.</string>
+    <string name="gutenberg_native_confirm" tools:ignore="UnusedResources">Confirm</string>
+    <string name="gutenberg_native_confirmation_message" tools:ignore="UnusedResources">Confirmation Message</string>
+    <string name="gutenberg_native_congrats_your_site_is_now_connected_to_stripe_you_can_start_makin" tools:ignore="UnusedResources">Congrats! Your site is now connected to Stripe. You can start making money by adding your first subscription!</string>
+    <string name="gutenberg_native_congratulations_your_site_is_now_on_a_paid_plan" tools:ignore="UnusedResources">Congratulations! Your site is now on a paid plan.</string>
+    <string name="gutenberg_native_congratulations_your_site_is_now_on_the_s_plan" tools:ignore="UnusedResources">Congratulations! Your site is now on the %s plan.</string>
+    <string name="gutenberg_native_connect" tools:ignore="UnusedResources">Connect</string>
+    <string name="gutenberg_native_connect_and_select_the_accounts_where_you_d_like_to_share_your_po" tools:ignore="UnusedResources">Connect and select the accounts where you\'d like to share your post.</string>
+    <string name="gutenberg_native_connect_to_stripe_to_use_this_block_on_your_site" tools:ignore="UnusedResources">Connect to Stripe to use this block on your site</string>
+    <string name="gutenberg_native_connect_your_instagram_account" tools:ignore="UnusedResources">Connect your Instagram account</string>
+    <string name="gutenberg_native_connecting" tools:ignore="UnusedResources">Connecting…</string>
+    <string name="gutenberg_native_contact_info" tools:ignore="UnusedResources">Contact Info</string>
     <string name="gutenberg_native_content" tools:ignore="UnusedResources">Content…</string>
+    <string name="gutenberg_native_control_block_visibility_based_on_how_often_a_visitor_has_viewed" tools:ignore="UnusedResources">Control block visibility based on how often a visitor has viewed the page.</string>
     <string name="gutenberg_native_copied_block" tools:ignore="UnusedResources">Copied block</string>
     <string name="gutenberg_native_copy_block" tools:ignore="UnusedResources">Copy block</string>
+    <string name="gutenberg_native_country" tools:ignore="UnusedResources">Country</string>
     <!-- translators: %s: current cell value. -->
     <string name="gutenberg_native_current_value_is_s" tools:ignore="UnusedResources">Current value is %s</string>
     <string name="gutenberg_native_customize" tools:ignore="UnusedResources">CUSTOMIZE</string>
     <string name="gutenberg_native_customize_gradient" tools:ignore="UnusedResources">Customize Gradient</string>
     <string name="gutenberg_native_cut_block" tools:ignore="UnusedResources">Cut block</string>
+    <string name="gutenberg_native_date_picker" tools:ignore="UnusedResources">Date Picker</string>
+    <string name="gutenberg_native_day_month_year" tools:ignore="UnusedResources">day month year</string>
+    <string name="gutenberg_native_default_checked_state" tools:ignore="UnusedResources">Default Checked State</string>
+    <string name="gutenberg_native_default_value" tools:ignore="UnusedResources">Default Value</string>
+    <string name="gutenberg_native_delay_between_transitions_in_seconds" tools:ignore="UnusedResources">Delay between transitions (in seconds)</string>
+    <string name="gutenberg_native_disconnect_your_account" tools:ignore="UnusedResources">Disconnect your account</string>
+    <string name="gutenberg_native_disconnecting" tools:ignore="UnusedResources">Disconnecting…</string>
     <string name="gutenberg_native_dismiss" tools:ignore="UnusedResources">Dismiss</string>
+    <string name="gutenberg_native_display_context_category_or_tag" tools:ignore="UnusedResources">Display context (category or tag)</string>
+    <string name="gutenberg_native_display_multiple_images_in_an_elegantly_organized_tiled_layout" tools:ignore="UnusedResources">Display multiple images in an elegantly organized tiled layout.</string>
+    <string name="gutenberg_native_display_opening_hours_for_your_business" tools:ignore="UnusedResources">Display opening hours for your business.</string>
+    <string name="gutenberg_native_display_thumbnails" tools:ignore="UnusedResources">Display thumbnails</string>
     <!-- translators: sample content for "About" page template -->
     <string name="gutenberg_native_don_t_cry_because_it_s_over_smile_because_it_happened" tools:ignore="UnusedResources">Don’t cry because it’s over, smile because it happened.</string>
     <string name="gutenberg_native_double_tap_to_add_a_block" tools:ignore="UnusedResources">Double tap to add a block</string>
@@ -87,37 +164,101 @@
     <string name="gutenberg_native_double_tap_to_undo_last_change" tools:ignore="UnusedResources">Double tap to undo last change</string>
     <!-- translators: sample content for "About" page template -->
     <string name="gutenberg_native_dr_seuss" tools:ignore="UnusedResources">Dr. Seuss</string>
+    <string name="gutenberg_native_dropdown" tools:ignore="UnusedResources">Dropdown</string>
     <string name="gutenberg_native_duplicate_block" tools:ignore="UnusedResources">Duplicate block</string>
+    <string name="gutenberg_native_e_mail" tools:ignore="UnusedResources">e–mail</string>
+    <string name="gutenberg_native_earn" tools:ignore="UnusedResources">Earn</string>
+    <string name="gutenberg_native_earn_income_by_adding_high_quality_ads_to_your_post" tools:ignore="UnusedResources">Earn income by adding high quality ads to your post</string>
     <string name="gutenberg_native_edit_block_in_web_browser" tools:ignore="UnusedResources">Edit block in web browser</string>
+    <string name="gutenberg_native_edit_image" tools:ignore="UnusedResources">Edit Image</string>
+    <string name="gutenberg_native_edit_slideshow" tools:ignore="UnusedResources">Edit Slideshow</string>
     <string name="gutenberg_native_edit_video" tools:ignore="UnusedResources">Edit video</string>
+    <string name="gutenberg_native_effects" tools:ignore="UnusedResources">Effects</string>
+    <string name="gutenberg_native_email" tools:ignore="UnusedResources">Email</string>
+    <string name="gutenberg_native_email_address" tools:ignore="UnusedResources">Email address</string>
+    <string name="gutenberg_native_email_address_09ba557f" tools:ignore="UnusedResources">Email Address</string>
+    <string name="gutenberg_native_email_feedback_settings" tools:ignore="UnusedResources">Email Feedback Settings</string>
     <!-- translators: sample content for "Team" page template -->
     <string name="gutenberg_native_email_me_a_href_mailto_mail_example_com_mail_example_com_a" tools:ignore="UnusedResources">Email me: &lt;a href=\"mailto:mail@example.com\"&gt;mail@example.com&lt;/a&gt;</string>
+    <string name="gutenberg_native_email_subject_line" tools:ignore="UnusedResources">Email subject line</string>
+    <string name="gutenberg_native_embed" tools:ignore="UnusedResources">Embed</string>
+    <string name="gutenberg_native_embed_a_calendar_for_customers_to_schedule_appointments" tools:ignore="UnusedResources">Embed a calendar for customers to schedule appointments</string>
+    <string name="gutenberg_native_embed_a_google_calendar" tools:ignore="UnusedResources">Embed a Google Calendar</string>
+    <string name="gutenberg_native_embed_a_pinterest_pin_board_or_user" tools:ignore="UnusedResources">Embed a Pinterest pin, board, or user.</string>
+    <string name="gutenberg_native_embed_eventbrite_event_details_and_ticket_checkout" tools:ignore="UnusedResources">Embed Eventbrite event details and ticket checkout.</string>
+    <string name="gutenberg_native_embed_posts_from_your_instagram_account" tools:ignore="UnusedResources">Embed posts from your Instagram account.</string>
+    <string name="gutenberg_native_enter_your_calendly_web_address_or_embed_code_below" tools:ignore="UnusedResources">Enter your Calendly web address or embed code below.</string>
+    <string name="gutenberg_native_enter_your_email" tools:ignore="UnusedResources">Enter your email</string>
+    <string name="gutenberg_native_enter_your_email_address" tools:ignore="UnusedResources">Enter your email address</string>
+    <string name="gutenberg_native_enter_your_first_name" tools:ignore="UnusedResources">Enter your first name</string>
+    <string name="gutenberg_native_enter_your_last_name" tools:ignore="UnusedResources">Enter your last name</string>
+    <string name="gutenberg_native_enter_your_restaurant_name_or_paste_an_opentable_reservation_widg" tools:ignore="UnusedResources">Enter your restaurant name, or paste an OpenTable Reservation Widget embed code.</string>
+    <string name="gutenberg_native_enter_your_revue_username" tools:ignore="UnusedResources">Enter your Revue username.</string>
+    <string name="gutenberg_native_enter_your_revue_username_here" tools:ignore="UnusedResources">Enter your Revue username here…</string>
+    <string name="gutenberg_native_eventbrite_checkout" tools:ignore="UnusedResources">Eventbrite Checkout</string>
     <string name="gutenberg_native_excerpt_length_words" tools:ignore="UnusedResources">Excerpt length (words)</string>
     <string name="gutenberg_native_failed_to_insert_media_please_tap_for_options" tools:ignore="UnusedResources">Failed to insert media.\nPlease tap for options.</string>
+    <string name="gutenberg_native_field_settings" tools:ignore="UnusedResources">Field Settings</string>
+    <string name="gutenberg_native_first_name" tools:ignore="UnusedResources">First name</string>
+    <string name="gutenberg_native_follow_these_instructions_to_change_the_colors_in_this_block" tools:ignore="UnusedResources">Follow these instructions to change the colors in this block.</string>
+    <string name="gutenberg_native_form" tools:ignore="UnusedResources">Form</string>
     <!-- translators: accessibility text. %s: gallery caption. -->
     <string name="gutenberg_native_gallery_caption_s" tools:ignore="UnusedResources">Gallery caption. %s</string>
+    <string name="gutenberg_native_gallery_settings" tools:ignore="UnusedResources">Gallery Settings</string>
     <!-- translators: sample content for "About" page template
 translators: sample content for "Contact" page template
 translators: sample content for "Portfolio" page template
 translators: sample content for "Services" page template
 translators: sample content for "Team" page template -->
     <string name="gutenberg_native_get_in_touch" tools:ignore="UnusedResources">Get in Touch</string>
+    <string name="gutenberg_native_gif" tools:ignore="UnusedResources">GIF</string>
     <string name="gutenberg_native_go_back" tools:ignore="UnusedResources">Go back</string>
+    <!-- translators: %d: Slide number. -->
+    <string name="gutenberg_native_go_to_slide_d" tools:ignore="UnusedResources">Go to slide %d</string>
+    <string name="gutenberg_native_good_for_collecting_donations_or_payments_for_products_and_servic" tools:ignore="UnusedResources">Good for collecting donations or payments for products and services.</string>
+    <string name="gutenberg_native_google_calendar" tools:ignore="UnusedResources">Google Calendar</string>
     <string name="gutenberg_native_gradient_type" tools:ignore="UnusedResources">Gradient Type</string>
+    <string name="gutenberg_native_grey_square" tools:ignore="UnusedResources">Grey square</string>
+    <string name="gutenberg_native_grid_view" tools:ignore="UnusedResources">Grid View</string>
+    <string name="gutenberg_native_grow" tools:ignore="UnusedResources">Grow</string>
     <string name="gutenberg_native_help_icon" tools:ignore="UnusedResources">Help icon</string>
     <string name="gutenberg_native_here_is_the_panel_content" tools:ignore="UnusedResources">Here is the panel content!</string>
+    <string name="gutenberg_native_hide_event_type_details" tools:ignore="UnusedResources">Hide Event Type Details</string>
     <string name="gutenberg_native_hide_keyboard" tools:ignore="UnusedResources">Hide keyboard</string>
+    <string name="gutenberg_native_highest_rating" tools:ignore="UnusedResources">Highest rating</string>
+    <string name="gutenberg_native_icon_for_image" tools:ignore="UnusedResources">Icon for image</string>
+    <string name="gutenberg_native_id" tools:ignore="UnusedResources">ID</string>
+    <string name="gutenberg_native_if_you_leave_these_blank_notifications_will_go_to_the_author_wit" tools:ignore="UnusedResources">(If you leave these blank, notifications will go to the author with the post or page title as the subject line.)</string>
     <!-- translators: accessibility text. %s: image caption. -->
     <string name="gutenberg_native_image_caption_s" tools:ignore="UnusedResources">Image caption. %s</string>
+    <string name="gutenberg_native_image_settings" tools:ignore="UnusedResources">Image Settings</string>
+    <string name="gutenberg_native_image_size" tools:ignore="UnusedResources">Image Size</string>
+    <string name="gutenberg_native_image_spacing_px" tools:ignore="UnusedResources">Image Spacing (px)</string>
+    <string name="gutenberg_native_in_uncategorized" tools:ignore="UnusedResources">In “Uncategorized”</string>
+    <string name="gutenberg_native_inline" tools:ignore="UnusedResources">Inline</string>
     <string name="gutenberg_native_insert_mention" tools:ignore="UnusedResources">Insert mention</string>
+    <string name="gutenberg_native_insert_option" tools:ignore="UnusedResources">Insert option</string>
     <!-- translators: sample content for "Services" page template -->
     <string name="gutenberg_native_inspiration" tools:ignore="UnusedResources">Inspiration</string>
+    <string name="gutenberg_native_inspired_by_radios_only_one_radio_item_can_be_selected_at_a_time" tools:ignore="UnusedResources">Inspired by radios, only one radio item can be selected at a time. Add several radio button items.</string>
+    <string name="gutenberg_native_instagram_gallery" tools:ignore="UnusedResources">Instagram Gallery</string>
+    <string name="gutenberg_native_instagram_gallery_placeholder" tools:ignore="UnusedResources">Instagram Gallery placeholder</string>
+    <string name="gutenberg_native_internet_page" tools:ignore="UnusedResources">internet page</string>
+    <string name="gutenberg_native_introductions_are_important_add_an_input_for_folks_to_add_their_n" tools:ignore="UnusedResources">Introductions are important. Add an input for folks to add their name.</string>
     <!-- translators: sample content for "About" page template -->
     <string name="gutenberg_native_it_is_our_choices_harry_that_show_what_we_truly_are_far_more_than" tools:ignore="UnusedResources">It is our choices, Harry, that show what we truly are, far more than our abilities.</string>
     <!-- translators: sample content for "About" page template -->
     <string name="gutenberg_native_j_k_rowling" tools:ignore="UnusedResources">J.K. Rowling</string>
+    <string name="gutenberg_native_jetpack_t_shirt" tools:ignore="UnusedResources">Jetpack t–shirt</string>
+    <string name="gutenberg_native_join_my_email_list" tools:ignore="UnusedResources">Join my email list</string>
     <!-- translators: sample content for "Team" page template -->
     <string name="gutenberg_native_juan_p_rez" tools:ignore="UnusedResources">Juan Pérez</string>
+    <string name="gutenberg_native_language" tools:ignore="UnusedResources">Language</string>
+    <string name="gutenberg_native_last_name" tools:ignore="UnusedResources">Last name</string>
+    <string name="gutenberg_native_leaderboard_728x90" tools:ignore="UnusedResources">Leaderboard 728x90</string>
+    <string name="gutenberg_native_learn_all_about_wordads" tools:ignore="UnusedResources">Learn all about WordAds</string>
+    <string name="gutenberg_native_learn_more" tools:ignore="UnusedResources">Learn more</string>
+    <string name="gutenberg_native_let_folks_speak_their_mind_this_text_box_is_great_for_longer_resp" tools:ignore="UnusedResources">Let folks speak their mind. This text box is great for longer responses.</string>
     <!-- translators: sample content for "About" page template
 translators: sample content for "Services" page template -->
     <string name="gutenberg_native_let_s_build_something_together" tools:ignore="UnusedResources">Let’s build something together!</string>
@@ -125,9 +266,27 @@ translators: sample content for "Services" page template -->
     <string name="gutenberg_native_let_s_build_something_together_7019bfe3" tools:ignore="UnusedResources">Let\'s build something together!</string>
     <!-- translators: sample content for "Contact" page template -->
     <string name="gutenberg_native_let_s_talk_don_t_hesitate_to_reach_out_with_the_contact_informati" tools:ignore="UnusedResources">Let\'s talk 👋 Don\'t hesitate to reach out with the contact information below, or send a message using the form.</string>
+    <string name="gutenberg_native_let_s_work_together" tools:ignore="UnusedResources">Let\'s work together</string>
+    <string name="gutenberg_native_lets_you_add_a_phone_number_with_an_automatically_generated_click" tools:ignore="UnusedResources">Lets you add a phone number with an automatically generated click–to–call link.</string>
+    <string name="gutenberg_native_lets_you_add_a_physical_address_with_schema_markup" tools:ignore="UnusedResources">Lets you add a physical address with Schema markup.</string>
+    <string name="gutenberg_native_lets_you_add_an_email_address_phone_number_and_physical_address_w" tools:ignore="UnusedResources">Lets you add an email address, phone number, and physical address with improved markup for better SEO results.</string>
+    <string name="gutenberg_native_lets_you_add_an_email_address_with_an_automatically_generated_cli" tools:ignore="UnusedResources">Lets you add an email address with an automatically generated click–to–email link.</string>
+    <string name="gutenberg_native_lets_you_add_credit_and_debit_card_payment_buttons_with_minimal_s" tools:ignore="UnusedResources">Lets you add credit and debit card payment buttons with minimal setup.</string>
+    <string name="gutenberg_native_likes_and_sharing" tools:ignore="UnusedResources">Likes and Sharing</string>
+    <string name="gutenberg_native_link_address_to_google_maps" tools:ignore="UnusedResources">Link address to Google Maps</string>
     <string name="gutenberg_native_link_inserted" tools:ignore="UnusedResources">Link inserted</string>
     <string name="gutenberg_native_link_text" tools:ignore="UnusedResources">Link text</string>
     <string name="gutenberg_native_link_to" tools:ignore="UnusedResources">Link To</string>
+    <string name="gutenberg_native_list_view" tools:ignore="UnusedResources">List View</string>
+    <string name="gutenberg_native_load_the_widget_in_an_iframe_recommended" tools:ignore="UnusedResources">Load the widget in an iFrame (Recommended)</string>
+    <string name="gutenberg_native_mail" tools:ignore="UnusedResources">mail</string>
+    <string name="gutenberg_native_mailchimp" tools:ignore="UnusedResources">Mailchimp</string>
+    <string name="gutenberg_native_map" tools:ignore="UnusedResources">Map</string>
+    <string name="gutenberg_native_markdown" tools:ignore="UnusedResources">Markdown</string>
+    <string name="gutenberg_native_markdown_is_a_text_formatting_syntax_that_is_converted_into_html" tools:ignore="UnusedResources">Markdown is a text formatting syntax that is converted into HTML. You can _emphasize_ text or **make it strong** with just a few characters.</string>
+    <string name="gutenberg_native_message" tools:ignore="UnusedResources">Message</string>
+    <string name="gutenberg_native_message_text" tools:ignore="UnusedResources">Message Text</string>
+    <string name="gutenberg_native_mobile_leaderboard_320x50" tools:ignore="UnusedResources">Mobile Leaderboard 320x50</string>
     <string name="gutenberg_native_move_block_down" tools:ignore="UnusedResources">Move block down</string>
     <!-- translators: accessibility text. %1: current block position (number). %2: next block position (number) -->
     <string name="gutenberg_native_move_block_down_from_row_1_s_to_row_2_s" tools:ignore="UnusedResources">Move block down from row %1$s to row %2$s</string>
@@ -142,22 +301,40 @@ translators: sample content for "Services" page template -->
     <string name="gutenberg_native_move_block_up_from_row_1_s_to_row_2_s" tools:ignore="UnusedResources">Move block up from row %1$s to row %2$s</string>
     <string name="gutenberg_native_move_image_backward" tools:ignore="UnusedResources">Move Image Backward</string>
     <string name="gutenberg_native_move_image_forward" tools:ignore="UnusedResources">Move Image Forward</string>
+    <string name="gutenberg_native_multiline_text" tools:ignore="UnusedResources">Multiline text</string>
     <string name="gutenberg_native_my_document_setting_panel" tools:ignore="UnusedResources">My Document Setting Panel</string>
     <!-- translators: sample content for "Portfolio" page template -->
     <string name="gutenberg_native_my_portfolio_showcases_various_projects_created_throughout_my_car" tools:ignore="UnusedResources">My portfolio showcases various projects created throughout my career. See my contact information below and get in touch.</string>
     <string name="gutenberg_native_my_post_publish_panel" tools:ignore="UnusedResources">My post publish panel</string>
     <string name="gutenberg_native_my_post_status_info" tools:ignore="UnusedResources">My post status info</string>
     <string name="gutenberg_native_my_pre_publish_panel" tools:ignore="UnusedResources">My pre publish panel</string>
+    <string name="gutenberg_native_name_example_com" tools:ignore="UnusedResources">name@example.com</string>
     <string name="gutenberg_native_navigate_up" tools:ignore="UnusedResources">Navigate Up</string>
     <string name="gutenberg_native_navigates_to_custom_color_picker" tools:ignore="UnusedResources">Navigates to custom color picker</string>
     <string name="gutenberg_native_navigates_to_customize_the_gradient" tools:ignore="UnusedResources">Navigates to customize the gradient</string>
     <string name="gutenberg_native_navigates_to_the_previous_content_sheet" tools:ignore="UnusedResources">Navigates to the previous content sheet</string>
+    <string name="gutenberg_native_need_help_finding_your_embed_code" tools:ignore="UnusedResources">Need help finding your embed code?</string>
+    <string name="gutenberg_native_need_help_finding_your_revue_username" tools:ignore="UnusedResources">Need help finding your Revue username?</string>
+    <string name="gutenberg_native_next_slide" tools:ignore="UnusedResources">Next Slide</string>
     <string name="gutenberg_native_no_application_can_handle_this_request_please_install_a_web_brows" tools:ignore="UnusedResources">No application can handle this request. Please install a Web browser.</string>
+    <string name="gutenberg_native_no_images_were_found_in_your_instagram_account" tools:ignore="UnusedResources">No images were found in your Instagram account.</string>
+    <string name="gutenberg_native_no_podcast_url_provided_please_enter_a_valid_podcast_rss_feed_url" tools:ignore="UnusedResources">No Podcast URL provided. Please enter a valid Podcast RSS feed URL.</string>
+    <string name="gutenberg_native_no_tracks_available_to_play" tools:ignore="UnusedResources">No tracks available to play.</string>
     <string name="gutenberg_native_note_column_layout_may_vary_between_themes_and_screen_sizes" tools:ignore="UnusedResources">Note: Column layout may vary between themes and screen sizes</string>
+    <string name="gutenberg_native_number_of_columns" tools:ignore="UnusedResources">Number of Columns</string>
+    <string name="gutenberg_native_number_of_posts" tools:ignore="UnusedResources">Number of Posts</string>
+    <string name="gutenberg_native_number_of_posts_1dfecf73" tools:ignore="UnusedResources">Number of posts</string>
+    <string name="gutenberg_native_on_submission" tools:ignore="UnusedResources">On Submission</string>
     <string name="gutenberg_native_only_show_excerpt" tools:ignore="UnusedResources">Only show excerpt</string>
+    <string name="gutenberg_native_open_address_in_google_maps" tools:ignore="UnusedResources">Open address in Google Maps</string>
     <string name="gutenberg_native_open_block_actions_menu" tools:ignore="UnusedResources">Open Block Actions Menu</string>
+    <string name="gutenberg_native_open_in_a_new_window" tools:ignore="UnusedResources">Open in a new window</string>
     <string name="gutenberg_native_open_link_in_a_browser" tools:ignore="UnusedResources">Open link in a browser</string>
     <string name="gutenberg_native_open_settings" tools:ignore="UnusedResources">Open Settings</string>
+    <string name="gutenberg_native_open_table_preview_s" tools:ignore="UnusedResources">Open Table Preview %s</string>
+    <string name="gutenberg_native_opentable" tools:ignore="UnusedResources">OpenTable</string>
+    <string name="gutenberg_native_opentable_reservation" tools:ignore="UnusedResources">OpenTable Reservation</string>
+    <string name="gutenberg_native_option" tools:ignore="UnusedResources">Option</string>
     <!-- translators: accessibility text. %s: Page break text. -->
     <string name="gutenberg_native_page_break_block_s" tools:ignore="UnusedResources">Page break block. %s</string>
     <!-- translators: accessibility text. empty page title. -->
@@ -166,6 +343,20 @@ translators: sample content for "Services" page template -->
     <string name="gutenberg_native_page_title_s" tools:ignore="UnusedResources">Page title. %s</string>
     <string name="gutenberg_native_paste_block_after" tools:ignore="UnusedResources">Paste block after</string>
     <string name="gutenberg_native_paste_url" tools:ignore="UnusedResources">Paste URL</string>
+    <string name="gutenberg_native_pause_slideshow" tools:ignore="UnusedResources">Pause Slideshow</string>
+    <string name="gutenberg_native_pay_with_paypal" tools:ignore="UnusedResources">Pay with PayPal</string>
+    <string name="gutenberg_native_people_love_options_add_several_checkbox_items" tools:ignore="UnusedResources">People love options. Add several checkbox items.</string>
+    <string name="gutenberg_native_phone" tools:ignore="UnusedResources">Phone</string>
+    <string name="gutenberg_native_phone_number" tools:ignore="UnusedResources">Phone number</string>
+    <string name="gutenberg_native_phone_number_ab25d61b" tools:ignore="UnusedResources">Phone Number</string>
+    <string name="gutenberg_native_pick_an_ad_format" tools:ignore="UnusedResources">Pick an ad format</string>
+    <string name="gutenberg_native_pick_an_image_filter" tools:ignore="UnusedResources">Pick an image filter</string>
+    <string name="gutenberg_native_pinterest" tools:ignore="UnusedResources">Pinterest</string>
+    <string name="gutenberg_native_placeholder_image" tools:ignore="UnusedResources">Placeholder image</string>
+    <string name="gutenberg_native_play_slideshow" tools:ignore="UnusedResources">Play Slideshow</string>
+    <string name="gutenberg_native_please_check_your_email_to_confirm_your_newsletter_subscription" tools:ignore="UnusedResources">Please check your email to confirm your newsletter subscription.</string>
+    <string name="gutenberg_native_please_ensure_this_embed_matches_the_one_from_your_opentable_acco" tools:ignore="UnusedResources">Please ensure this embed matches the one from your OpenTable account</string>
+    <string name="gutenberg_native_podcast_player" tools:ignore="UnusedResources">Podcast Player</string>
     <!-- translators: title for "Portfolio" page template -->
     <string name="gutenberg_native_portfolio" tools:ignore="UnusedResources">Portfolio</string>
     <!-- translators: sample content for "Team" page template -->
@@ -174,22 +365,53 @@ translators: sample content for "Services" page template -->
     <string name="gutenberg_native_post_title_empty" tools:ignore="UnusedResources">Post title. Empty</string>
     <!-- translators: accessibility text. %s: text content of the post title. -->
     <string name="gutenberg_native_post_title_s" tools:ignore="UnusedResources">Post title. %s</string>
+    <string name="gutenberg_native_postal_zip_code" tools:ignore="UnusedResources">Postal/Zip Code</string>
+    <string name="gutenberg_native_preview_unavailable_you_haven_t_published_enough_posts_with_simil" tools:ignore="UnusedResources">Preview unavailable: you haven\'t published enough posts with similar content.</string>
+    <string name="gutenberg_native_previous_slide" tools:ignore="UnusedResources">Previous Slide</string>
     <string name="gutenberg_native_problem_displaying_block" tools:ignore="UnusedResources">Problem displaying block</string>
     <string name="gutenberg_native_problem_opening_the_video" tools:ignore="UnusedResources">Problem opening the video</string>
+    <string name="gutenberg_native_processing" tools:ignore="UnusedResources">Processing…</string>
+    <string name="gutenberg_native_product_image" tools:ignore="UnusedResources">Product Image</string>
+    <string name="gutenberg_native_products" tools:ignore="UnusedResources">Products</string>
     <!-- translators: sample content for "Portfolio" page template -->
     <string name="gutenberg_native_project_name" tools:ignore="UnusedResources">Project Name</string>
+    <string name="gutenberg_native_promote_amazon_products_and_earn_a_commission_from_sales" tools:ignore="UnusedResources">Promote Amazon products and earn a commission from sales.</string>
+    <string name="gutenberg_native_promotion_settings" tools:ignore="UnusedResources">Promotion Settings</string>
+    <string name="gutenberg_native_radio" tools:ignore="UnusedResources">Radio</string>
+    <string name="gutenberg_native_rate_movies_books_songs_recipes_anything_you_can_put_a_number_on" tools:ignore="UnusedResources">Rate movies, books, songs, recipes — anything you can put a number on.</string>
+    <string name="gutenberg_native_rectangle_300x250" tools:ignore="UnusedResources">Rectangle 300x250</string>
+    <string name="gutenberg_native_recurring_payments" tools:ignore="UnusedResources">Recurring Payments</string>
+    <string name="gutenberg_native_redirect_address" tools:ignore="UnusedResources">Redirect Address</string>
+    <string name="gutenberg_native_redirect_to_another_webpage" tools:ignore="UnusedResources">Redirect to another webpage</string>
+    <string name="gutenberg_native_register_on_eventbrite" tools:ignore="UnusedResources">Register on Eventbrite</string>
+    <string name="gutenberg_native_related_posts" tools:ignore="UnusedResources">Related Posts</string>
+    <string name="gutenberg_native_related_posts_settings" tools:ignore="UnusedResources">Related Posts Settings</string>
     <string name="gutenberg_native_remove_annotations" tools:ignore="UnusedResources">Remove annotations</string>
     <string name="gutenberg_native_remove_block" tools:ignore="UnusedResources">Remove block</string>
+    <string name="gutenberg_native_remove_image" tools:ignore="UnusedResources">Remove Image</string>
+    <string name="gutenberg_native_remove_option" tools:ignore="UnusedResources">Remove option</string>
+    <string name="gutenberg_native_repeat_visitor" tools:ignore="UnusedResources">Repeat Visitor</string>
     <string name="gutenberg_native_replace_current_block" tools:ignore="UnusedResources">Replace Current Block</string>
     <string name="gutenberg_native_replace_image_or_video" tools:ignore="UnusedResources">Replace image or video</string>
     <string name="gutenberg_native_replace_video" tools:ignore="UnusedResources">Replace video</string>
+    <string name="gutenberg_native_required" tools:ignore="UnusedResources">(required)</string>
+    <string name="gutenberg_native_required_eed6bfb4" tools:ignore="UnusedResources">Required</string>
     <string name="gutenberg_native_reset_block" tools:ignore="UnusedResources">Reset Block</string>
+    <string-array name="gutenberg_native_restaurant" tools:ignore="UnusedResources">
+        <item>Restaurant</item>
+        <item>Restaurants</item>
+    </string-array>
+    <string name="gutenberg_native_revue" tools:ignore="UnusedResources">Revue</string>
+    <string name="gutenberg_native_revue_username" tools:ignore="UnusedResources">Revue Username</string>
+    <string name="gutenberg_native_s_and_s_are_not_a_valid_email_address" tools:ignore="UnusedResources">%s and %s are not a valid email address.</string>
+    <string name="gutenberg_native_s_are_not_a_valid_email_address" tools:ignore="UnusedResources">%s are not a valid email address.</string>
     <!-- translators: accessibility text for the media block empty state. %s: media type -->
     <string name="gutenberg_native_s_block_empty" tools:ignore="UnusedResources">%s block. Empty</string>
     <!-- translators: %s: block title e.g: "Paragraph". -->
     <string name="gutenberg_native_s_block_options" tools:ignore="UnusedResources">%s block options</string>
     <!-- translators: accessibility text for blocks with invalid content. %d: localized block title -->
     <string name="gutenberg_native_s_block_this_block_has_invalid_content" tools:ignore="UnusedResources">%s block. This block has invalid content</string>
+    <string name="gutenberg_native_s_is_not_a_valid_email_address" tools:ignore="UnusedResources">%s is not a valid email address.</string>
     <!-- translators: %s: Name of the block -->
     <string name="gutenberg_native_s_isn_t_yet_supported_on_wordpress_for_android" tools:ignore="UnusedResources">\'%s\' isn\'t yet supported on WordPress for Android</string>
     <!-- translators: %s: Name of the block -->
@@ -198,46 +420,107 @@ translators: sample content for "Services" page template -->
     <string name="gutenberg_native_sally_smith" tools:ignore="UnusedResources">Sally Smith</string>
     <!-- translators: sample content for "Team" page template -->
     <string name="gutenberg_native_samuel_the_dog" tools:ignore="UnusedResources">Samuel the Dog</string>
+    <string name="gutenberg_native_satellite" tools:ignore="UnusedResources">Satellite</string>
+    <string name="gutenberg_native_schedule_time_with_me" tools:ignore="UnusedResources">Schedule time with me</string>
+    <string name="gutenberg_native_search_by_entering_an_amazon_product_name_or_id_below" tools:ignore="UnusedResources">Search by entering an Amazon product name or ID below.</string>
+    <string name="gutenberg_native_search_for_and_insert_an_animated_image" tools:ignore="UnusedResources">Search for and insert an animated image.</string>
     <string name="gutenberg_native_select_a_color" tools:ignore="UnusedResources">Select a color</string>
     <string name="gutenberg_native_select_a_layout" tools:ignore="UnusedResources">Select a layout</string>
+    <string name="gutenberg_native_select_and_play_episodes_from_a_single_podcast" tools:ignore="UnusedResources">Select and play episodes from a single podcast.</string>
+    <string name="gutenberg_native_seo_description" tools:ignore="UnusedResources">SEO Description</string>
+    <string name="gutenberg_native_serves_images_using_jetpack_s_fast_global_network_of_servers" tools:ignore="UnusedResources">Serves images using Jetpack\'s fast global network of servers.</string>
     <!-- translators: title for "Services" page template -->
     <string name="gutenberg_native_services" tools:ignore="UnusedResources">Services</string>
+    <string name="gutenberg_native_set_the_placeholder_text" tools:ignore="UnusedResources">Set the placeholder text</string>
+    <string name="gutenberg_native_share_this_post" tools:ignore="UnusedResources">Share this post</string>
+    <string name="gutenberg_native_shop_now" tools:ignore="UnusedResources">Shop Now</string>
+    <string name="gutenberg_native_shortlink" tools:ignore="UnusedResources">Shortlink</string>
+    <string name="gutenberg_native_show_a_custom_text_message" tools:ignore="UnusedResources">Show a custom text message</string>
+    <string name="gutenberg_native_show_a_summary_of_submitted_fields" tools:ignore="UnusedResources">Show a summary of submitted fields</string>
+    <string name="gutenberg_native_show_author_seller" tools:ignore="UnusedResources">Show Author/Seller</string>
+    <string name="gutenberg_native_show_first_name_field" tools:ignore="UnusedResources">Show first name field.</string>
+    <string name="gutenberg_native_show_image" tools:ignore="UnusedResources">Show Image</string>
+    <string name="gutenberg_native_show_last_name_field" tools:ignore="UnusedResources">Show last name field.</string>
+    <string name="gutenberg_native_show_likes" tools:ignore="UnusedResources">Show likes.</string>
     <string name="gutenberg_native_show_post_content" tools:ignore="UnusedResources">Show post content</string>
+    <string name="gutenberg_native_show_price" tools:ignore="UnusedResources">Show Price</string>
+    <string name="gutenberg_native_show_purchase_button" tools:ignore="UnusedResources">Show Purchase Button</string>
     <!-- translators: Checkbox toggle label -->
     <string name="gutenberg_native_show_section" tools:ignore="UnusedResources">Show section</string>
+    <string name="gutenberg_native_show_sharing_buttons" tools:ignore="UnusedResources">Show sharing buttons.</string>
+    <string name="gutenberg_native_show_title" tools:ignore="UnusedResources">Show Title</string>
     <string name="gutenberg_native_sidebar_title_plugin" tools:ignore="UnusedResources">Sidebar title plugin</string>
+    <string name="gutenberg_native_sign_up_for_opentable" tools:ignore="UnusedResources">Sign up for OpenTable</string>
+    <string name="gutenberg_native_simple_payments" tools:ignore="UnusedResources">Simple Payments</string>
     <string name="gutenberg_native_size" tools:ignore="UnusedResources">Size</string>
+    <string name="gutenberg_native_slideshow" tools:ignore="UnusedResources">Slideshow</string>
+    <string name="gutenberg_native_standard_224_x_301_pixels" tools:ignore="UnusedResources">Standard (224 x 301 pixels)</string>
+    <string name="gutenberg_native_star_rating" tools:ignore="UnusedResources">Star Rating</string>
     <string name="gutenberg_native_start_writing" tools:ignore="UnusedResources">Start writing…</string>
+    <string name="gutenberg_native_state_province_region" tools:ignore="UnusedResources">State/Province/Region</string>
     <!-- translators: sample content for "Services" page template -->
     <string name="gutenberg_native_strategy" tools:ignore="UnusedResources">Strategy</string>
+    <string name="gutenberg_native_street_address" tools:ignore="UnusedResources">Street Address</string>
+    <string name="gutenberg_native_style" tools:ignore="UnusedResources">Style</string>
+    <string name="gutenberg_native_subscribe" tools:ignore="UnusedResources">Subscribe</string>
+    <string name="gutenberg_native_subscription_form" tools:ignore="UnusedResources">Subscription Form</string>
+    <string name="gutenberg_native_subscription_received" tools:ignore="UnusedResources">Subscription received!</string>
     <string name="gutenberg_native_success_message" tools:ignore="UnusedResources">Success Message</string>
+    <string name="gutenberg_native_success_you_re_on_the_list" tools:ignore="UnusedResources">Success! You\'re on the list.</string>
+    <string name="gutenberg_native_support_reference" tools:ignore="UnusedResources">Support reference</string>
     <string name="gutenberg_native_take_a_photo" tools:ignore="UnusedResources">Take a Photo</string>
     <string name="gutenberg_native_take_a_photo_or_video" tools:ignore="UnusedResources">Take a Photo or Video</string>
     <string name="gutenberg_native_take_a_video" tools:ignore="UnusedResources">Take a Video</string>
+    <string name="gutenberg_native_take_flight_in_ultimate_comfort_with_this_stylish_t_shirt_featuri" tools:ignore="UnusedResources">Take flight in ultimate comfort with this stylish t–shirt featuring the Jetpack logo.</string>
+    <string name="gutenberg_native_tall_288_x_490_pixels" tools:ignore="UnusedResources">Tall (288 x 490 pixels)</string>
     <string name="gutenberg_native_tap_here_to_show_help" tools:ignore="UnusedResources">Tap here to show help</string>
     <string name="gutenberg_native_tap_to_hide_the_keyboard" tools:ignore="UnusedResources">Tap to hide the keyboard</string>
     <!-- translators: title for "Team" page template -->
     <string name="gutenberg_native_team" tools:ignore="UnusedResources">Team</string>
+    <string name="gutenberg_native_telephone" tools:ignore="UnusedResources">Telephone</string>
     <string name="gutenberg_native_template_preview" tools:ignore="UnusedResources">Template Preview</string>
+    <string name="gutenberg_native_terrain" tools:ignore="UnusedResources">Terrain</string>
+    <string name="gutenberg_native_textarea" tools:ignore="UnusedResources">Textarea</string>
+    <string name="gutenberg_native_thank_you_for_your_submission" tools:ignore="UnusedResources">Thank you for your submission!</string>
+    <string name="gutenberg_native_the_best_way_to_set_a_date_add_a_date_picker" tools:ignore="UnusedResources">The best way to set a date. Add a date picker.</string>
+    <string name="gutenberg_native_the_reduce_motion_accessibility_option_is_selected_therefore_auto" tools:ignore="UnusedResources">The Reduce Motion accessibility option is selected, therefore autoplay will be disabled in this browser.</string>
     <!-- translators: sample content for "About" page template -->
     <string name="gutenberg_native_the_way_to_get_started_is_to_quit_talking_and_begin_doing" tools:ignore="UnusedResources">The way to get started is to quit talking and begin doing.</string>
+    <string-array name="gutenberg_native_there_is_currently_only_s_post_in_your_instagram_account" tools:ignore="UnusedResources">
+        <item>There is currently only %s post in your Instagram account</item>
+        <item>There are currently only %s posts in your Instagram account</item>
+    </string-array>
+    <string name="gutenberg_native_this_block_will_be_hidden_from_your_visitors_until_you_connect_to" tools:ignore="UnusedResources">This block will be hidden from your visitors until you connect to Stripe.</string>
+    <string name="gutenberg_native_this_block_will_only_appear_to_a_visitor_who_visited_the_page_thr" tools:ignore="UnusedResources">This block will only appear to a visitor who visited the page three or more times.</string>
     <!-- translators: sample content for "About" page template -->
     <string name="gutenberg_native_this_is_sample_content_included_with_the_template_to_illustrate_i" tools:ignore="UnusedResources">This is sample content, included with the template to illustrate its features. Remove or replace it with your own words and media.</string>
+    <string name="gutenberg_native_tiled_gallery" tools:ignore="UnusedResources">Tiled Gallery</string>
     <string name="gutenberg_native_title" tools:ignore="UnusedResources">Title:</string>
+    <string name="gutenberg_native_transition_effect" tools:ignore="UnusedResources">Transition effect</string>
     <string name="gutenberg_native_translate" tools:ignore="UnusedResources">Translate</string>
     <string name="gutenberg_native_try_a_starter_layout" tools:ignore="UnusedResources">Try a starter layout</string>
+    <string name="gutenberg_native_try_markdown" tools:ignore="UnusedResources">Try Markdown</string>
     <string name="gutenberg_native_ungroup" tools:ignore="UnusedResources">Ungroup</string>
     <string name="gutenberg_native_updates_the_title" tools:ignore="UnusedResources">Updates the title.</string>
+    <string name="gutenberg_native_upgrade" tools:ignore="UnusedResources">Upgrade</string>
+    <string name="gutenberg_native_upgrade_to_a_paid_plan_to_upload_videos" tools:ignore="UnusedResources">Upgrade to a paid plan to upload videos.</string>
+    <string name="gutenberg_native_upgrade_to_a_paid_plan_to_use_this_block_on_your_site" tools:ignore="UnusedResources">Upgrade to a paid plan to use this block on your site.</string>
+    <string name="gutenberg_native_upgrade_to_planname_s_to_upload_videos" tools:ignore="UnusedResources">Upgrade to %(planName)s to upload videos.</string>
+    <string name="gutenberg_native_upgrade_to_planname_s_to_use_this_block_on_your_site" tools:ignore="UnusedResources">Upgrade to %(planName)s to use this block on your site.</string>
+    <string name="gutenberg_native_upload_unlimited_videos_to_your_website_and_display_them_using_a" tools:ignore="UnusedResources">Upload unlimited videos to your website and \t\t\t\t\t\tdisplay them using a fast, unbranded, \t\t\t\t\t\tcustomizable player.</string>
     <!-- translators: sample content for "Contact" page template -->
     <string name="gutenberg_native_usa" tools:ignore="UnusedResources">USA</string>
+    <string name="gutenberg_native_use_regular_characters_and_punctuation_to_style_text_links_and_li" tools:ignore="UnusedResources">Use regular characters and punctuation to style text, links, and lists.</string>
     <!-- translators: accessibility text. Empty video caption. -->
     <string name="gutenberg_native_video_caption_empty" tools:ignore="UnusedResources">Video caption. Empty</string>
     <!-- translators: accessibility text. %s: video caption. -->
     <string name="gutenberg_native_video_caption_s" tools:ignore="UnusedResources">Video caption. %s</string>
+    <string name="gutenberg_native_view_my_plan" tools:ignore="UnusedResources">View my plan</string>
     <!-- translators: sample content for "About" page template -->
     <string name="gutenberg_native_visitors_will_want_to_know_who_is_on_the_other_side_of_the_page_u" tools:ignore="UnusedResources">Visitors will want to know who is on the other side of the page. Use this space to write about yourself, your site, your business, or anything you want. Use the testimonials below to quote others, talking about the same thing – in their own words.</string>
     <!-- translators: sample content for "About" page template -->
     <string name="gutenberg_native_walt_disney" tools:ignore="UnusedResources">Walt Disney</string>
+    <string name="gutenberg_native_want_to_reply_to_folks_add_an_email_address_input" tools:ignore="UnusedResources">Want to reply to folks? Add an email address input.</string>
     <!-- translators: sample content for "Team" page template -->
     <string name="gutenberg_native_want_to_work_with_us" tools:ignore="UnusedResources">Want to work with us?</string>
     <string name="gutenberg_native_warning_message" tools:ignore="UnusedResources">Warning Message</string>
@@ -247,9 +530,24 @@ translators: sample content for "Services" page template -->
     <string name="gutenberg_native_we_are_working_hard_to_add_more_blocks_with_each_release_in_the_m_68559180" tools:ignore="UnusedResources">We are working hard to add more blocks with each release. In the meantime, you can also edit this post on the web.</string>
     <!-- translators: sample content for "Services" page template -->
     <string name="gutenberg_native_we_offer_a_range_of_services_to_help_you_achieve_the_results_you" tools:ignore="UnusedResources">We offer a range of services to help you achieve the results you\'re after. Not sure what you need, or what it costs? We can explain what services are right for you and tell you more about our fees. Get in touch below.</string>
+    <string name="gutenberg_native_we_ran_into_an_issue" tools:ignore="UnusedResources">We ran into an issue</string>
+    <string name="gutenberg_native_website" tools:ignore="UnusedResources">Website</string>
     <!-- translators: sample content for "Blog" page template -->
     <string name="gutenberg_native_welcome_to_our_new_blog" tools:ignore="UnusedResources">Welcome to our new blog</string>
     <!-- translators: sample content for "About" page template -->
     <string name="gutenberg_native_what_people_say" tools:ignore="UnusedResources">What People Say</string>
+    <string name="gutenberg_native_when_you_need_just_a_small_amount_of_text_add_a_text_input" tools:ignore="UnusedResources">When you need just a small amount of text, add a text input.</string>
+    <string name="gutenberg_native_whoops_there_was_an_error_and_we_couldn_t_process_your_subscripti" tools:ignore="UnusedResources">Whoops! There was an error and we couldn\'t process your subscription. Please reload the page and try again.</string>
+    <string name="gutenberg_native_wide_840_x_150_pixels" tools:ignore="UnusedResources">Wide (840 x 150 pixels)</string>
+    <string name="gutenberg_native_wide_skyscraper_160x600" tools:ignore="UnusedResources">Wide Skyscraper 160x600</string>
+    <string name="gutenberg_native_with_the_opentable_block_you_may_encounter_display_issues_if_you" tools:ignore="UnusedResources">With the OpenTable block you may encounter display issues if you use its \"wide\" style with anything other than \"wide\" or \"full\" alignment. The wide display style may also not work well on smaller screens.</string>
     <string name="gutenberg_native_wordpress_media_library" tools:ignore="UnusedResources">WordPress Media Library</string>
+    <string name="gutenberg_native_write_label" tools:ignore="UnusedResources">Write label…</string>
+    <string name="gutenberg_native_write_option" tools:ignore="UnusedResources">Write option…</string>
+    <string name="gutenberg_native_you_can_enter_multiple_email_addresses_separated_by_commas" tools:ignore="UnusedResources">You can enter multiple email addresses separated by commas.</string>
+    <string name="gutenberg_native_you_can_try_it_out_before_upgrading_but_only_you_will_see_it_it_w" tools:ignore="UnusedResources">You can try it out before upgrading, but only you will see it. It will be hidden from your visitors until you upgrade.</string>
+    <string name="gutenberg_native_you_cancelled_connecting_your_site_to_stripe" tools:ignore="UnusedResources">You cancelled connecting your site to Stripe.</string>
+    <string name="gutenberg_native_you_ll_receive_an_email_notification_each_time_someone_fills_out" tools:ignore="UnusedResources">You’ll receive an email notification each time someone fills out the form. Where should it go, and what should the subject line be?</string>
+    <string name="gutenberg_native_your_calendar_couldn_t_be_embedded_please_double_check_your_url_o" tools:ignore="UnusedResources">Your calendar couldn\'t be embedded. Please double check your URL or code.</string>
+    <string name="gutenberg_native_your_podcast_url_is_invalid_and_couldn_t_be_embedded_please_doubl" tools:ignore="UnusedResources">Your podcast URL is invalid and couldn\'t be embedded. Please double check your URL.</string>
 </resources>
