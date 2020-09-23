@@ -105,8 +105,6 @@ appium-out.log
 ios-screen-recordings/
 android-screen-recordings/
 
-bin/wp-cli.phar
-
 # Report generated from jest-junit
 /junit.xml
 
