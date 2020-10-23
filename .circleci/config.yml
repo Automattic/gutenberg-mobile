@@ -40,10 +40,15 @@ commands:
           name: Checkout Submodules
           command: git submodule update --init --recursive
   add-jest-reporter-dir:
-      steps:
-        - run:
-            name: Create reports directory
-            command: mkdir reports && mkdir reports/test-results
+    steps:
+      - run:
+          name: Create reports directory
+          command: mkdir reports && mkdir reports/test-results
+  checkout-gutenberg-master:
+    steps:
+      - run:
+          name: Checkout gutenberg master
+          command: cd gutenberg && git fetch origin && git checkout origin/master
 
 jobs:
   checks:
@@ -93,6 +98,9 @@ jobs:
       is-canary:
         type: string
         default: ""
+      target-gutenberg-master:
+        type: boolean
+        default: false
     docker:
     - image: circleci/android:api-29-node
     environment:
@@ -101,6 +109,10 @@ jobs:
     steps:
       - checkout
       - checkout-submodules
+      - when:
+          condition: << parameters.target-gutenberg-master >>
+          steps:
+            - checkout-gutenberg-master
       - npm-install
       - add-jest-reporter-dir
       - run:
@@ -156,11 +168,18 @@ jobs:
       is-canary:
         type: string
         default: ""
+      target-gutenberg-master:
+        type: boolean
+        default: false
     macos:
       xcode: "11.2.1"
     steps:
     - checkout
     - checkout-submodules
+    - when:
+        condition: << parameters.target-gutenberg-master >>
+        steps:
+          - checkout-gutenberg-master
     - npm-install
     - add-jest-reporter-dir
     - run:
@@ -279,3 +298,22 @@ workflows:
           filters:
             branches:
               only: develop
+
+  ui-tests-targeting-master-full-scheduled:
+    jobs:
+      - ios-device-checks:
+          name: Test iOS on Device targetting gutenberg master - Scheduled
+          post-to-slack: false
+          target-gutenberg-master: true
+      - android-device-checks:
+          name: Test Android on Device targetting gutenberg master - Scheduled
+          post-to-slack: false
+          target-gutenberg-master: true
+    triggers:
+      - schedule:
+          cron: '1 2,14 * * *'
+          filters:
+            branches:
+              only:
+                - develop
+                - add/ci-on-gb-master
