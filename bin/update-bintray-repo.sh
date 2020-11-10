@@ -4,6 +4,8 @@
 command -v jfrog > /dev/null || { echo "jfrog-cli-go is required to update the repo. Install it with 'brew install jfrog-cli-go'" >&2; exit 1; }
 # Check for xmlstarlet
 command -v xmlstarlet > /dev/null || { echo "xmlstarlet is required to update the repo. Install it with 'brew install xmlstarlet'" >&2; exit 1; }
+# Check for jq
+command -v jq > /dev/null || { echo "jq is required to update the repo. Install it with 'brew install jq'" >&2; exit 1; }
 
 # Exit if any command fails
 set -e
@@ -16,6 +18,7 @@ TMP_WORKING_DIRECTORY=$(mktemp -d)
 
 BINTRAY_REPO="wordpress-mobile/react-native-mirror"
 PACKAGE_PATHS=("node_modules/react-native/android/com/facebook/react/react-native" "node_modules/jsc-android/dist/org/webkit/android-jsc")
+RN_VERSION=$(jq --raw-output '.devDependencies."react-native"' "gutenberg/package.json")
 
 package_name () {
     local PACKAGE_PATH="$1"
@@ -52,13 +55,10 @@ echo "Please sign into Bintray..."
 echo "You can find your Bintray API key here: https://bintray.com/profile/edit"
 jfrog bt config
 
-# Yarn install
-echo "Running yarn install in '${TMP_WORKING_DIRECTORY}'..."
-cp "package.json" "${TMP_WORKING_DIRECTORY}/"
-cp "yarn.lock" "${TMP_WORKING_DIRECTORY}/"
-cp -Ra "i18n-cache" "${TMP_WORKING_DIRECTORY}/"
+# npm install
+echo "Running npm install react-native@${RN_VERSION} in '${TMP_WORKING_DIRECTORY}'..."
 cd "${TMP_WORKING_DIRECTORY}"
-yarn install --silent
+npm install react-native@${RN_VERSION}
 
 # Find local packages in node_modules/
 echo "Getting local package details..."

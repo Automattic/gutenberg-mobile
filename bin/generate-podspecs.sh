@@ -20,7 +20,6 @@ EXTERNAL_PODSPECS=$(find "$NODE_MODULES_DIR/react-native/third-party-podspecs" \
                          "$NODE_MODULES_DIR/react-native-svg" \
                          "$NODE_MODULES_DIR/react-native-keyboard-aware-scroll-view" \
                          "$NODE_MODULES_DIR/react-native-safe-area" \
-                         "$NODE_MODULES_DIR/react-native-dark-mode" \
                          "$NODE_MODULES_DIR/react-native-get-random-values" -type f -name "*.podspec" -print)
 
 for podspec in $EXTERNAL_PODSPECS
