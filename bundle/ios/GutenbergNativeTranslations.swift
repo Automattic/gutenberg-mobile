@@ -578,6 +578,7 @@ private func dummy() {
     _ = NSLocalizedString("Show download button", comment: "")
     _ = NSLocalizedString("Show inline embed", comment: "")
     _ = NSLocalizedString("Show login & logout links.", comment: "")
+    _ = NSLocalizedString("Show or hide the block settings sidebar.", comment: "")
     _ = NSLocalizedString("Show post content", comment: "")
     _ = NSLocalizedString("Show post counts", comment: "")
     _ = NSLocalizedString("Show section", comment: "translators: Checkbox toggle label")

@@ -629,6 +629,7 @@
     <string name="gutenberg_native_show_download_button" tools:ignore="UnusedResources">Show download button</string>
     <string name="gutenberg_native_show_inline_embed" tools:ignore="UnusedResources">Show inline embed</string>
     <string name="gutenberg_native_show_login_logout_links" tools:ignore="UnusedResources">Show login &amp; logout links.</string>
+    <string name="gutenberg_native_show_or_hide_the_block_settings_sidebar" tools:ignore="UnusedResources">Show or hide the block settings sidebar.</string>
     <string name="gutenberg_native_show_post_content" tools:ignore="UnusedResources">Show post content</string>
     <string name="gutenberg_native_show_post_counts" tools:ignore="UnusedResources">Show post counts</string>
     <!-- translators: Checkbox toggle label -->
