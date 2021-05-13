@@ -23,6 +23,9 @@ addAction( 'native.render', 'gutenberg-mobile', ( props ) => {
 	setupJetpackEditor(
 		props.jetpackState || { blogId: 1, isJetpackActive: true }
 	);
+//	if ( __DEV__ ) {
+		require( './block-experiments-setup' );
+//	}
 } );
 
 addFilter( 'native.block_editor_props', 'gutenberg-mobile', ( editorProps ) => {

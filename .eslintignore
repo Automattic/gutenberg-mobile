@@ -1,5 +1,7 @@
 ; ignore the submodules
 gutenberg
+block-experiments
 bundle
 jetpack
 bin
+

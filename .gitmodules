@@ -6,3 +6,7 @@
 	path = jetpack
 	url = ../../Automattic/jetpack.git
 	shallow = true
+[submodule "block-experiments"]
+	path = block-experiments
+	url = ../../Automattic/block-experiments.git
+	shallow = true
