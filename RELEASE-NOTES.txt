@@ -1,6 +1,6 @@
 Unreleased
 ------
-
+* [*] Bottom-sheet text area: automatically expands/shrinks with text entry. [https://github.com/wordpress-mobile/gutenberg-mobile/pull/3505]
 
 1.52.2
 ------
