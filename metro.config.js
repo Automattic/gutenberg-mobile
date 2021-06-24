@@ -17,17 +17,21 @@ gutenbergMetroConfigCopy.resolver.extraNodeModules = new Proxy(
 				return gutenbergFolder;
 			}
 
-			// let's try find the module in the Jetpack submodule. We'll try the .pnpm folder.
+			// If not exists, let's try find the module in the Jetpack submodule. We'll try the .pnpm folder.
 			const moduleFolderPnpm = path.join(
 				process.cwd(),
 				`./jetpack/node_modules/.pnpm/node_modules/${ name }`
 			);
 
-			// pnpm uses symlinks so, let's find the target
-			const symlinkTarget = fs.readlinkSync( moduleFolderPnpm );
+			if ( fs.existsSync( moduleFolderPnpm ) ) {
+				// pnpm uses symlinks so, let's find the target
+				const symlinkTarget = fs.readlinkSync( moduleFolderPnpm );
 
-			// the target is still using paths relative to the parent folder of the module, let's find the real path.
-			return path.resolve( moduleFolderPnpm + '/../' + symlinkTarget );
+				// the target is still using paths relative to the parent folder of the module, let's find the real path.
+				return path.resolve(
+					moduleFolderPnpm + '/../' + symlinkTarget
+				);
+			}
 		},
 	}
 );

@@ -14,10 +14,16 @@ import correctTextFontWeight from './text-font-weight-correct';
 import setupJetpackEditor from './jetpack-editor-setup';
 import setupBlockExperiments from './block-experiments-setup';
 import initialHtml from './initial-html';
+import * as Sentry from './sentry';
 
-addAction( 'native.pre-render', 'gutenberg-mobile', () => {
+addAction( 'native.pre-render', 'gutenberg-mobile', async ( props ) => {
+	const { sentryOptions } = props;
+
 	require( './strings-overrides' );
 	correctTextFontWeight();
+
+	// Crash logging - Sentry initialization
+	Sentry.initialize( sentryOptions );
 } );
 
 addAction( 'native.render', 'gutenberg-mobile', ( props ) => {

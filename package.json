@@ -105,6 +105,7 @@
 		"version": "npm run bundle && git add -A bundle"
 	},
 	"dependencies": {
-		"email-validator": "2.0.4"
+		"email-validator": "2.0.4",
+		"@sentry/react-native": "2.4.2"
 	}
 }
