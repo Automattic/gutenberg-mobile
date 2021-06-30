@@ -1,5 +1,6 @@
 Unreleased
 ------
+* [*] Image block: Add a "featured" banner and ability to set or remove an image as featured. (iOS only) [https://github.com/wordpress-mobile/gutenberg-mobile/pull/3449]
 * [*] Update loading and failed screens for web version of the editor [https://github.com/wordpress-mobile/gutenberg-mobile/pull/3573]
 
 1.56.0
