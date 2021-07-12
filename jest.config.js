@@ -15,16 +15,9 @@ if ( process.env.TEST_RN_PLATFORM ) {
 
 const configPath = 'gutenberg/test/native';
 
-const transpiledPackages = glob(
-	'gutenberg/packages/*{/src,}/index.js'
-).reduce( ( mapper, modulePath ) => {
-	const moduleName = modulePath.split( '/' )[ 2 ];
-	if ( ! mapper[ `@wordpress/${ moduleName }` ] ) {
-		mapper[ `@wordpress/${ moduleName }` ] =
-			'<rootDir>/' + modulePath.replace( /\/index\.js$/, '' );
-	}
-	return mapper;
-}, {} );
+const transpiledPackageNames = glob(
+	'./gutenberg/packages/*/src/index.js'
+).map( ( fileName ) => fileName.split( '/' )[ 3 ] );
 
 module.exports = {
 	verbose: true,
@@ -54,7 +47,10 @@ module.exports = {
 		'\\.(scss)$': '<rootDir>/' + configPath + '/__mocks__/styleMock.js',
 		'\\.(jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
 			'<rootDir>/' + configPath + '/__mocks__/fileMock.js',
-		...transpiledPackages,
+		[ `@wordpress\\/(${ transpiledPackageNames.join(
+			'|'
+		) })$` ]: '<rootDir>/gutenberg/packages/$1/src',
+		'test/helpers$': '<rootDir>/' + configPath + '/helpers.js',
 	},
 	haste: {
 		defaultPlatform: rnPlatform,
