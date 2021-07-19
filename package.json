@@ -61,6 +61,7 @@
 		"rn-bundle": "react-native bundle",
 		"postrn-bundle": "patch-package --reverse --patch-dir gutenberg/packages/react-native-editor/metro-patch",
 		"i18n:gutenberg": "./bin/i18n-download.sh gutenberg",
+		"i18n:gutenberg:force": "cross-env REFRESH_I18N=1 ./bin/i18n-download.sh gutenberg",
 		"bundle": "npm run clean; npm run bundle:js && npm run genstrings",
 		"prebundle:js": "npm run i18n:gutenberg",
 		"bundle:js": "npm run bundle:android && npm run bundle:ios",
