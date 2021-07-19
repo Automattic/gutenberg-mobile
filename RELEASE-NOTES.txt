@@ -1,5 +1,6 @@
 Unreleased
 ------
+* [***] Add Inserter Block Search [https://github.com/wordpress-mobile/gutenberg-mobile/issues/2570]
 
 1.57.1
 ------
