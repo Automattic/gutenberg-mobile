@@ -1,0 +1,32 @@
+steps:
+  - label: "Bundle Android"
+    key: "bundle-android"
+    plugins:
+      - docker#v3.8.0:
+          image: "public.ecr.aws/automattic/gb-mobile-image:latest"
+          environment:
+            - "CI=true"
+    command: |
+        source /root/.bashrc
+
+        pushd gutenberg && nvm install && nvm use && popd
+        npm ci --unsafe-perm --prefer-offline --no-audit --no-progress
+
+        npm run prebundle:js
+        npm run bundle:android
+
+        buildkite-agent artifact upload bundle/android/App.js
+
+  - label: "Build Android RN Bridge & Publish to S3"
+    depends_on: "bundle-android"
+    plugins:
+      - docker#v3.8.0:
+          image: "public.ecr.aws/automattic/android-build-image:v1.0.0"
+          propagate-environment: true
+          environment:
+            # DO NOT MANUALLY SET THESE VALUES!
+            # They are passed from the BuildKite agent to the Docker container
+            - "AWS_ACCESS_KEY"
+            - "AWS_SECRET_KEY"
+    command: |
+        .buildkite/publish-android-artifacts.sh

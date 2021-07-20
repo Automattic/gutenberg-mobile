@@ -314,101 +314,6 @@ jobs:
                 include_job_number_field: false
                 include_project_field: false
                 failure_message: ':red_circle: Scheduled tests failed on iOS device!'
-  android-build-and-publish-react-native-bridge:
-    # This job builds the JS bunle required by the Android version of the
-    # react-native-bridge package, builds the AAR for that package, and uploads
-    # it to S3.
-    #
-    # Running on a Ubuntu machine to have more memory compared to the Docker +
-    # Node or Docker + Android images that CircleCI offers (circleci/node)
-    #
-    # Also running all in one job so that we can bail out early under cetrain
-    # conditions and save CI cycles.
-    #
-    # See: https://github.com/wordpress-mobile/gutenberg-mobile/pull/3038#issuecomment-765334675
-    machine:
-      image: << pipeline.parameters.linux-machine-image >>
-    steps:
-      - run:
-          name: Evaluate whether to run
-          command: |
-            # This is a partial duplication of the logic to compute the version
-            # to use for the AAR from below. It's useful to have it here
-            # because there are conditions under which we shouldn't run the job
-            # that can't be captured in a CircleCI filter.
-            #
-            # Exiting here saves a non-trivial amount of CI time because of how
-            # heavy the repo is to checkout (it takes at least 1 minute) and
-            # how time consuming running `npm ci` is.
-            if [[ -z ${CIRCLE_TAG+x} ]]; then
-              if [[ -n "$CIRCLE_PULL_REQUEST" ]]; then
-                echo "Build initiated from a branch with a pull request: proceeding..."
-              elif [[ $CIRCLE_BRANCH == "develop" ]]; then
-                echo "Build initiated on $CIRCLE_BRANCH: proceeding..."
-              else
-                # We end up here on the first push of a new branch, when there
-                # isn't a PR open for it yet.
-                echo "Build initiated from a feature branch with no pull request: aborting."
-                circleci-agent step halt
-              fi
-            else
-              echo "Build initiated from a tag: proceeding..."
-            fi
-      - checkout-shallow
-      - checkout-submodules
-      - run:
-          # Setting up Android before fetching the Node dependencies because
-          # this step is faster, so if it fails we'll learn about it sooner and
-          # avoid wasting cycles.
-          name: Setup Android Tooling
-          command: .circleci/setup-android-on-ubuntu.sh
-      - npm-install
-      - run:
-          name: Build JavaScript Bundle
-          command: |
-            npm run prebundle:js
-            npm run bundle:android
-          # The job can take a long time, so let's bump the no_output_timeout
-          # to more than the default 10m
-          no_output_timeout: 20m
-      - run:
-          name: Build React Native Bridge & Upload to S3
-          environment:
-            # This value is set in the setup script, but I'm not sure whether
-            # it's available after executing it
-            ANDROID_SDK_ROOT: /usr/lib/android-sdk
-          command: |
-            # We publish from PRs as well as the main branch and tags to help
-            # developers to iterate faster.
-            #
-            # If we're not on a PR but a merge commit on the develop branch the
-            # version will be the "develop-" followed by the commit SHA1.
-            #
-            # On a tag, the version should be the tag value.
-            #
-            # If we're on a different branch that has no open PR, we should
-            # not build and exit early instead.
-            if [[ -z "${CIRCLE_TAG+x}" ]]; then
-              if [[ -n "$CIRCLE_PULL_REQUEST" ]]; then
-                PR_NUMBER=$(basename $CIRCLE_PULL_REQUEST)
-                # CIRCLE_SHA1 should always be available.
-                VERSION="$PR_NUMBER-$CIRCLE_SHA1"
-              elif [[ $CIRCLE_BRANCH == "develop" ]]; then
-                VERSION="$CIRCLE_BRANCH-$CIRCLE_SHA1"
-              else
-                # This happens on the first push of a new branch, when there
-                # isn't a PR open for it yet.
-                echo "Running on a feature branch with no open PR."
-                echo "The checks previous to this step should not have let this happen."
-                exit 1
-              fi
-            else
-              VERSION=$CIRCLE_TAG
-            fi
-
-            cd gutenberg/packages/react-native-bridge/android
-
-            ./publish-aztec-and-bridge.sh $VERSION
 
 workflows:
   gutenberg-mobile:
@@ -457,15 +362,6 @@ workflows:
           filters:
             branches:
               only: /^dependabot/submodules/.*/
-      - android-build-and-publish-react-native-bridge:
-          name: Build Android RN Bridge & Publish to S3
-          filters:
-            branches:
-              # Don't run on trunk, otherwise, run on every other branch
-              ignore: trunk
-            tags:
-              # Run for every tag
-              only: /.*/
 
   ui-tests-full-scheduled:
     jobs:
