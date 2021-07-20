@@ -4,40 +4,64 @@ orbs:
   slack: circleci/slack@3.4.2
 
 commands:
-  npm-install:
+  node-version:
+    description: Install project Node
+    steps:
+      - run:
+          name: Install project Node
+          command: |
+            # Workaround old docker images with incorrect $HOME
+            # check https://github.com/docker/docker/issues/2968 for details
+            if [ "${HOME}" = "/" ]
+            then
+              export HOME=$(getent passwd $(id -un) | cut -d: -f6)
+            fi
+
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+            source $HOME/.bashrc
+
+            cd gutenberg
+            nvm install
+  dependencies-npm:
+    description: Get npm dependencies
     steps:
       - restore_cache:
-          name: Restore NPM Cache
-          keys:
-            - npm-i18n-v4-cache-v{{ .Environment.CACHE_TRIGGER_VERSION }}-job-{{ .Environment.CIRCLE_JOB }}-{{ checksum "package-lock.json" }}
+          name: Restore npm cache
+          key: npm-i18n-v4-cache-v{{ .Environment.CACHE_TRIGGER_VERSION }}-{{ arch }}-{{ checksum "package-lock.json" }}
       - run:
-          name: NPM Install
+          name: Install npm dependencies
           command: npm ci --prefer-offline --no-audit
       - save_cache:
-          name: Save NPM Cache
-          key: npm-i18n-v4-cache-v{{ .Environment.CACHE_TRIGGER_VERSION }}-job-{{ .Environment.CIRCLE_JOB }}-{{ checksum "package-lock.json" }}
+          name: Save npm cache
+          key: npm-i18n-v4-cache-v{{ .Environment.CACHE_TRIGGER_VERSION }}-{{ arch }}-{{ checksum "package-lock.json" }}
           paths:
             - ~/.npm
             - i18n-cache/data
+            - node_modules
+            - gutenberg/node_modules
+            - jetpack/node_modules
   npm-install-full:
     steps:
       - restore_cache:
           name: Restore NPM Cache
-          keys:
-            - npm-i18n-v4-cache-v{{ .Environment.CACHE_TRIGGER_VERSION }}-job-{{ .Environment.CIRCLE_JOB }}-{{ checksum "gutenberg/package-lock.json" }}
+          key: npm-i18n-v4-cache-v{{ .Environment.CACHE_TRIGGER_VERSION }}-{{ arch }}-{{ checksum "package-lock.json" }}
       - run:
           name: NPM Install Full
           command: npm install --no-audit
       - save_cache:
           name: Save NPM Cache
-          key: npm-i18n-v4-cache-v{{ .Environment.CACHE_TRIGGER_VERSION }}-job-{{ .Environment.CIRCLE_JOB }}-{{ checksum "gutenberg/package-lock.json" }}
+          key: npm-i18n-v4-cache-v{{ .Environment.CACHE_TRIGGER_VERSION }}-{{ arch }}-{{ checksum "package-lock.json" }}
           paths:
             - ~/.npm
             - i18n-cache/data
+            - node_modules
+            - gutenberg/node_modules
+            - jetpack/node_modules
   checkout-shallow:
+    description: Shallow clone project
     steps:
       - run:
-          name: Checkout (Shallow)
+          name: Checkout (shallow)
           command: |
             #!/bin/sh
             set -e
@@ -97,11 +121,13 @@ commands:
               git --no-pager log --no-color -n 1 --format='HEAD is now at %h %s'
             fi
   checkout-submodules:
+    description: Shallow initialize git submodules
     steps:
       - run:
-          name: Checkout Submodules
+          name: Checkout submodules
           command: git submodule update --init --recursive --depth 1
   add-jest-reporter-dir:
+      description: Create reports directory
       steps:
         - run:
             name: Create reports directory
@@ -134,22 +160,8 @@ jobs:
     steps:
       - checkout-shallow
       - checkout-submodules
-      - run:
-          name: Install newer nvm
-          command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
-      - run:
-          name: Install newer node using nvm
-          command: |
-            cd gutenberg
-            nvm install
-      - when:
-          condition: <<parameters.check-correctness>>
-          steps:
-            - npm-install-full
-      - unless:
-          condition: <<parameters.check-correctness>>
-          steps:
-            - npm-install
+      - node-version
+      - dependencies-npm
       - add-jest-reporter-dir
       - run:
           name: Set Environment Variables
@@ -178,8 +190,8 @@ jobs:
     steps:
       - checkout-shallow
       - checkout-submodules
-      - run: node -v
-      - npm-install
+      - node-version
+      - dependencies-npm
       - run: npm run test:e2e:bundle:android
       - run:
           name: Build apk
@@ -226,7 +238,8 @@ jobs:
     steps:
       - checkout-shallow
       - checkout-submodules
-      - npm-install
+      - node-version
+      - dependencies-npm
       - run:
           name: Run Android native unit tests
           command: cd gutenberg/packages/react-native-editor/android && ./gradlew testDebug
@@ -244,7 +257,8 @@ jobs:
     steps:
     - checkout-shallow
     - checkout-submodules
-    - npm-install
+    - node-version
+    - dependencies-npm
     - add-jest-reporter-dir
     - run:
         name: Set Environment Variables
@@ -256,8 +270,7 @@ jobs:
         command: find gutenberg/package-lock.json gutenberg/packages/react-native-editor/ios gutenberg/packages/react-native-aztec/ios gutenberg/packages/react-native-bridge/ios -type f -print0 | sort -z | xargs -0 shasum | tee ios-checksums.txt
     - restore_cache:
         name: Restore Build Cache
-        keys:
-          - ios-build-cache-{{ checksum "ios-checksums.txt" }}
+        key: ios-build-cache-{{ checksum "ios-checksums.txt" }}
     - restore_cache:
         name: Restore Dependencies Cache
         keys:
@@ -362,7 +375,8 @@ jobs:
           # avoid wasting cycles.
           name: Setup Android Tooling
           command: .circleci/setup-android-on-ubuntu.sh
-      - npm-install
+      - node-version
+      - dependencies-npm
       - run:
           name: Build JavaScript Bundle
           command: |
@@ -439,10 +453,12 @@ workflows:
                 - /^dependabot/submodules/.*/
       - ios-device-checks:
           name: Test iOS on Device - Full
-          requires: [ "Optional UI Tests" ]
+          requires:
+            - "Optional UI Tests"
       - android-device-checks:
           name: Test Android on Device - Full
-          requires: [ "Optional UI Tests" ]
+          requires:
+            - "Optional UI Tests"
       - android-native-unit-tests:
           name: Android Native Unit Tests
       - ios-device-checks:
