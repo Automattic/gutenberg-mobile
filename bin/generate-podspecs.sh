@@ -61,6 +61,7 @@ EXTERNAL_PODSPECS=$(find "$NODE_MODULES_DIR/react-native/third-party-podspecs" \
                          "$NODE_MODULES_DIR/react-native-screens" \
                          "$NODE_MODULES_DIR/react-native-svg" \
                          "$NODE_MODULES_DIR/react-native-video"\
+                         "$NODE_MODULES_DIR/react-native-webview"\
                           -type f -name "*.podspec" -print)
 
 for podspec in $EXTERNAL_PODSPECS

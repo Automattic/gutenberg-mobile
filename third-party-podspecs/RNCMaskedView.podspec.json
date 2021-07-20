@@ -3,10 +3,7 @@
   "version": "0.1.11-wp",
   "summary": "React Native MaskedView component",
   "license": "MIT",
-  "authors": {
-    "name": "Mike Nedosekin",
-    "email": "crespo8800@gmail.com"
-  },
+  "authors": "Mike Nedosekin <crespo8800@gmail.com>",
   "homepage": "https://github.com/react-native-community/react-native-masked-view#readme",
   "platforms": {
     "ios": "9.0",

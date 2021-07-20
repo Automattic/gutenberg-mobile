@@ -4,10 +4,7 @@
   "homepage": "https://github.com/APSL/react-native-keyboard-aware-scroll-view#readme",
   "summary": "A React Native ScrollView component that resizes when the keyboard appears.",
   "license": "MIT",
-  "authors": {
-    "name": "Alvaro Medina Ballester",
-    "email": "me@alvaromb.com"
-  },
+  "authors": "Alvaro Medina Ballester <me@alvaromb.com>",
   "platforms": {
     "ios": "8.0"
   },
